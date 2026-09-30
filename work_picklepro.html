@@ -153,6 +153,13 @@ nav{-webkit-backdrop-filter:blur(16px);}
   .swipe-dots button::before{content:'';width:7px;height:7px;border-radius:4px;background:#d4d4d4;transition:background .2s,width .2s;}
   .swipe-dots button[aria-current="true"]::before{background:var(--ink);width:18px;}
 }
+/* Desktop: centre the hero on one axis; intro text spans the hero image width */
+@media(min-width:900px){
+  .cs-hero{text-align:center;}
+  .cs-hero .hero-sub{max-width:none;margin-left:auto;margin-right:auto;}
+  .cs-hero .meta-row{justify-content:center;}
+  .cs-hero .carousel-wrap{text-align:left;}
+}
 </style>
 </head>
 <body>
