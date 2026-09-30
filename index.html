@@ -378,6 +378,18 @@ nav { -webkit-backdrop-filter: blur(16px); }
 @supports (min-height: 100svh) { #hero { min-height: 100svh; } }
 .span-all { grid-column: 1 / -1; }
 
+/* Desktop: intro text runs the full width of the heading above */
+@media (min-width: 900px) {
+  .title-block { width: fit-content; margin: 0 auto; }
+  .title-block .hero-sub,
+  .title-block .section-sub,
+  .title-block .contact-sub { max-width: none; contain: inline-size; }
+}
+
+/* About: keep the three stat tiles on one row */
+.about-stats { flex-wrap: nowrap; }
+.astat { flex: 1 1 0; min-width: 0; padding: 0.9rem 1rem; }
+
 .rv-thumb { background: #ece8fb; align-items: flex-start; padding-top: 2.6rem; height: 440px; }
 .rv-thumb img { width: 80%; display: block; border-radius: 10px 10px 0 0; box-shadow: 0 16px 48px rgba(40,30,90,0.18); }
 
@@ -425,7 +437,8 @@ nav { -webkit-backdrop-filter: blur(16px); }
 @media (max-width: 400px) {
   .nav-name span { display: none; }
   .hero-actions a { width: 100%; justify-content: center; }
-  .astat { flex: 1 1 40%; }
+  .astat { padding: 0.8rem 0.75rem; }
+  .astat-num { font-size: 1.3rem; }
 }
 
 </style>
@@ -455,8 +468,10 @@ nav { -webkit-backdrop-filter: blur(16px); }
       <span class="avail-dot"></span>
       Available for UX roles from September 2026
     </div>
-    <h1>Design rooted in real human experience</h1>
-    <p class="hero-sub">I didn't arrive at UX through a computer science degree. I arrived through a decade of watching people struggle with software that wasn't built for them — and deciding to do something about it.</p>
+    <div class="title-block">
+      <h1>Design rooted in real human experience</h1>
+      <p class="hero-sub">I didn't arrive at UX through a computer science degree. I arrived through a decade of watching people struggle with software that wasn't built for them — and deciding to do something about it.</p>
+    </div>
     <div class="hero-actions">
       <a href="#projects" class="btn-dark">View my work</a>
       <a href="mailto:caleb.j.cuddihy@gmail.com" class="btn-ghost">
@@ -499,8 +514,10 @@ nav { -webkit-backdrop-filter: blur(16px); }
   <div class="wrap">
     <div class="section-head">
       <div class="stag stag-orange">Selected work</div>
-      <h2>Four projects. One through-line.</h2>
-      <p class="section-sub">Each reflects a genuine problem — often one I've lived. All achieved distinction. Together they show range across mobile and desktop, solo and collaborative, consumer and accessibility-focused.</p>
+      <div class="title-block">
+        <h2>Four projects. One through-line.</h2>
+        <p class="section-sub">Each reflects a genuine problem — often one I've lived. All achieved distinction. Together they show range across mobile and desktop, solo and collaborative, consumer and accessibility-focused.</p>
+      </div>
     </div>
 
     <div class="proj-grid">
@@ -731,8 +748,10 @@ nav { -webkit-backdrop-filter: blur(16px); }
   <div class="wrap">
     <div class="contact-inner">
       <div class="stag stag-blue">Get in touch</div>
-      <h2>Have a role in mind?<br>Let's talk.</h2>
-      <p class="contact-sub">Open to full-time UX roles from September 2026, and freelance or contract work before then. Based in West Norwood — comfortable in-person across London, hybrid, or fully remote.</p>
+      <div class="title-block">
+        <h2>Have a role in mind?<br>Let's talk.</h2>
+        <p class="contact-sub">Open to full-time UX roles from September 2026, and freelance or contract work before then. Based in West Norwood — comfortable in-person across London, hybrid, or fully remote.</p>
+      </div>
       <div class="contact-actions">
         <a href="mailto:caleb.j.cuddihy@gmail.com" class="btn-dark">Send an email</a>
         <a href="https://www.linkedin.com/in/caleb-cuddihy-b24264347/" class="btn-ghost" target="_blank" rel="noopener">
