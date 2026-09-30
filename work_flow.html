@@ -96,6 +96,55 @@ footer a{color:var(--mid);text-decoration:none;}
   .outcome-grid{grid-template-columns:1fr 1fr;}
   .ai-box{grid-template-columns:1fr;}
 }
+
+/* ── MOBILE & RESPONSIVE ── */
+html{-webkit-text-size-adjust:100%;}
+nav{-webkit-backdrop-filter:blur(16px);}
+@media(max-width:900px){
+  .wrap{padding:0 1.5rem;}
+}
+@media(max-width:640px){
+  nav{padding:0 1.1rem;}
+  .nav-name span{display:none;}
+  .back-link{padding:0.6rem 0;}
+  .wrap{padding:0 1.1rem;}
+  .cs-hero{padding-top:6rem;}
+  .hero-sub{font-size:1rem;}
+  .meta-row{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;margin-bottom:2rem;}
+  .meta-item{padding:0.65rem 0.9rem;}
+  .hero-img-wrap,.carousel-wrap{margin-bottom:3rem;}
+  section.cs{padding:2.75rem 0;}
+  h2{font-size:1.5rem;}
+  h3{margin-top:1.6rem;}
+  p,li{font-size:0.97rem;}
+  .callout{padding:1rem 1.1rem;}
+  .outcome-grid{grid-template-columns:1fr;gap:0.6rem;}
+  .outcome-box{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;}
+  .outcome-num{font-size:1.6rem;flex-shrink:0;min-width:3.2rem;}
+  .outcome-lbl{margin-top:0;}
+  footer{padding:1.5rem 1.1rem;flex-direction:column;gap:0.6rem;text-align:center;}
+}
+@media(max-width:360px){
+  .nav-name{display:none;}
+}
+
+/* Tap-to-enlarge screens */
+.zoomable{cursor:zoom-in;}
+.zoomable:focus-visible{outline:3px solid #4f6ef7;outline-offset:2px;}
+.lb{position:fixed;inset:0;z-index:200;background:#0a0a0a;}
+.lb[hidden],.lb-hint[hidden]{display:none;}
+.lb-scroll{position:absolute;inset:0;overflow:auto;display:flex;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;}
+.lb-scroll img{margin:auto;display:block;}
+.lb-scroll img.fit-w{width:100%;max-width:640px;height:auto;}
+.lb-scroll img.fit-c{max-width:94%;max-height:94%;width:auto;height:auto;}
+@media(max-width:640px){.lb-scroll img.fit-c{max-width:100%;}}
+.lb-close{position:fixed;top:0.8rem;right:0.8rem;z-index:1;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);background:rgba(0,0,0,0.6);color:#fff;font-size:1.1rem;cursor:pointer;}
+.lb-hint{position:fixed;left:50%;bottom:1rem;transform:translateX(-50%);background:rgba(0,0,0,0.7);color:#fff;font-size:0.75rem;padding:0.35rem 0.9rem;border-radius:100px;pointer-events:none;white-space:nowrap;}
+@media(max-width:640px){
+  .hero-img-wrap{border-radius:12px;}
+  .ai-box{padding:1.3rem;gap:0.6rem;}
+  .screen-grid{gap:1rem;}
+}
 </style>
 </head>
 <body>
@@ -263,5 +312,53 @@ footer a{color:var(--mid);text-decoration:none;}
   <a href="index.html">← Back to portfolio</a>
 </footer>
 
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Enlarged screen">
+  <button class="lb-close" aria-label="Close">&#10005;</button>
+  <div class="lb-scroll"><img alt=""></div>
+  <div class="lb-hint" hidden>Pinch to zoom · turn your phone for a bigger view</div>
+</div>
+<script>
+(function(){
+  var lb = document.getElementById('lb');
+  var scroller = lb.querySelector('.lb-scroll');
+  var big = scroller.querySelector('img');
+  var hint = lb.querySelector('.lb-hint');
+  var closeBtn = lb.querySelector('.lb-close');
+  var opener = null;
+
+  function open(img) {
+    opener = img;
+    big.src = img.src; big.alt = img.alt;
+    var r = img.naturalHeight / img.naturalWidth, vr = window.innerHeight / window.innerWidth;
+    // Tall images fill the width and scroll down; wide images are fitted whole (pinch to zoom on phones)
+    big.className = r > vr ? 'fit-w' : 'fit-c';
+    hint.hidden = !(big.className === 'fit-c' && vr > 1);
+    lb.hidden = false;
+    document.body.style.overflow = 'hidden';
+    scroller.scrollTo(0, 0);
+    closeBtn.focus();
+  }
+  function close() {
+    lb.hidden = true;
+    big.removeAttribute('src');
+    document.body.style.overflow = '';
+    if (opener) opener.focus();
+  }
+
+  document.querySelectorAll('.screen-wrap img, .phone-wrap img, .phone-shell img, .hero-img-wrap img').forEach(function(img){
+    img.classList.add('zoomable');
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.addEventListener('click', function(){ open(img); });
+    img.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); }
+    });
+  });
+  closeBtn.addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if (e.target === lb || e.target === scroller) close(); });
+  document.addEventListener('keydown', function(e){ if (!lb.hidden && e.key === 'Escape') close(); });
+})();
+</script>
 </body>
 </html>
