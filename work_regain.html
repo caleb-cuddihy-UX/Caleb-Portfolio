@@ -11,10 +11,10 @@
 <meta property="og:title" content="RegAIn — UX Case Study · Caleb Cuddihy">
 <meta property="og:description" content="A physiotherapy aftercare app with AR form tracking, helping patients exercise confidently between appointments. Group UX case study, awarded Distinction.">
 <meta property="og:url" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/work_regain.html">
-<meta property="og:image" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/og-image.png">
+<meta property="og:image" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/images/og-regain.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
-<meta property="og:image:alt" content="Caleb Cuddihy, UX Designer — Design rooted in real human experience">
+<meta property="og:image:alt" content="RegAIn case study by Caleb Cuddihy — physiotherapy aftercare with AR form tracking">
 <meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -47,7 +47,7 @@ h1{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;letter-spacing:-0.035em;li
 .hero-sub{font-size:1.05rem;color:var(--mid);max-width:58ch;line-height:1.72;margin-bottom:2rem;}
 .meta-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0.8rem;margin-bottom:3rem;}
 .meta-item{background:var(--card);border-radius:10px;padding:0.7rem 1.2rem;}
-.meta-label{font-size:0.68rem;font-weight:600;color:var(--light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.15rem;}
+.meta-label{font-size:0.68rem;font-weight:600;color:var(--mid);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.15rem;}
 .meta-val{font-size:0.88rem;font-weight:600;color:var(--ink);}
 
 /* Hero image — home screen on the page background, even shadow all round */
@@ -92,7 +92,7 @@ li{font-size:1rem;color:var(--mid);line-height:1.75;margin-bottom:0.3rem;}
 .outcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0;}
 .outcome-box{background:var(--card);border-radius:12px;padding:1.4rem;}
 .outcome-num{font-size:2rem;font-weight:800;color:var(--ink);letter-spacing:-0.03em;}
-.outcome-lbl{font-size:0.78rem;color:var(--light);margin-top:0.2rem;line-height:1.4;}
+.outcome-lbl{font-size:0.78rem;color:var(--mid);margin-top:0.2rem;line-height:1.4;}
 
 footer{border-top:1px solid var(--border);padding:1.8rem 2.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;color:var(--light);}
 footer a{color:var(--mid);text-decoration:none;}
@@ -168,6 +168,58 @@ nav{-webkit-backdrop-filter:blur(16px);}
 @media(max-width:640px){
   .phone-grid > .phone-wrap:only-child{flex-basis:66%;margin:0 auto;}
 }
+/* Research sections: method tag, stats, insight + artefact pairs */
+.phase-tag{display:inline-block;vertical-align:middle;margin-left:0.6rem;font-size:0.7rem;font-weight:600;letter-spacing:0;padding:0.22rem 0.7rem;border-radius:100px;background:#e0f2f1;color:#00695c;}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0 0.5rem;}
+.insight{display:grid;grid-template-columns:1fr 1.15fr;gap:2.5rem;align-items:center;padding:2.2rem 0;border-top:1px solid var(--border);margin-top:2.2rem;}
+.insight + .insight{margin-top:0;}
+.insight-num{font-size:0.75rem;font-weight:700;color:#41899d;letter-spacing:0.04em;text-transform:uppercase;}
+.insight h3{margin-top:0.4rem;font-size:1.25rem;letter-spacing:-0.015em;line-height:1.25;}
+.insight-so{font-size:0.95rem;margin-bottom:0;}
+.artefact{margin:0;}
+.artefact img{width:100%;display:block;border-radius:12px;border:1px solid var(--border);box-shadow:0 0 24px rgba(0,0,0,0.07);}
+.artefact figcaption{font-size:0.75rem;color:var(--mid);margin-top:0.7rem;line-height:1.5;}
+.artefact figcaption strong{color:var(--mid);font-weight:600;}
+.artefact.chart{background:var(--card);border-radius:12px;padding:1.4rem;}
+.chart-title{font-size:0.88rem;font-weight:700;color:var(--ink);margin-bottom:1rem;line-height:1.4;}
+.bar-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) 2.6rem;gap:0.7rem;align-items:center;margin-bottom:0.55rem;}
+.bar-label{font-size:0.78rem;color:var(--mid);line-height:1.35;}
+.bar-track{display:block;height:12px;border-radius:6px;background:#e4e4e4;overflow:hidden;}
+.bar-fill{display:block;height:100%;border-radius:6px;background:#41899d;}
+.bar-val{font-size:0.8rem;font-weight:700;color:var(--ink);text-align:right;}
+.callout.hmw{margin-top:2.2rem;}
+@media(max-width:820px){
+  .stat-grid{grid-template-columns:1fr 1fr;}
+  .insight{grid-template-columns:1fr;gap:1.4rem;padding:1.8rem 0;margin-top:1.8rem;}
+}
+@media(max-width:640px){
+  .stat-grid{gap:0.6rem;}
+  .stat-grid .outcome-box{display:block;padding:1rem;}
+  .bar-row{grid-template-columns:1fr 2.6rem;row-gap:0.25rem;}
+  .bar-label{grid-column:1 / -1;}
+}
+/* Testing and outcomes */
+.outcome-hero{background:#0d2a3a;color:#fff;border-radius:16px;padding:1.8rem 2rem;margin:1.5rem 0 1rem;}
+.outcome-hero-kicker{font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#7fc4d4;margin-bottom:0.5rem;}
+.outcome-hero-title{font-size:1.55rem;font-weight:800;letter-spacing:-0.025em;line-height:1.2;margin-bottom:0.8rem;}
+.outcome-hero p{color:#c5dbe2;font-size:0.95rem;line-height:1.7;margin:0;max-width:70ch;}
+.outcome-hero + .outcome-grid{margin-top:0;}
+.test-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.2rem 0 0.5rem;}
+.test-card{border-radius:12px;padding:1.3rem;}
+.test-card h4{font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.7rem;}
+.test-card ul{margin:0 0 0 1.1rem;}
+.test-card li,.test-card p{font-size:0.9rem;line-height:1.6;color:#3a3a3a;margin-bottom:0.4rem;}
+.test-card p{margin:0;}
+.test-good{background:#e8faf1;} .test-good h4{color:#17693a;}
+.test-fix{background:#fff1ec;} .test-fix h4{color:#b4411f;}
+.test-key{background:#eef3ff;} .test-key h4{color:#3447b8;}
+@media(max-width:820px){
+  .test-cards{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  .outcome-hero{padding:1.4rem 1.2rem;border-radius:14px;}
+  .outcome-hero-title{font-size:1.3rem;}
+}
 </style>
 </head>
 <body>
@@ -215,13 +267,107 @@ nav{-webkit-backdrop-filter:blur(16px);}
   <!-- ROLE -->
   <section class="cs">
     <h2>My role</h2>
+    <p>The team decided the project direction collectively, by vote. As the concept began as my idea, I took ownership of helping the wider team understand the core concept, and of addressing concerns and blockers to progress in each phase of the project.</p>
     <p>I led UX design for the project — framing the problem, mapping the information architecture, designing the full onboarding-to-recovery user flow, and producing the wireframes that formed the basis of the group's prototype. I also supported the project manager in keeping the team aligned, and presented the final submission to academic assessors.</p>
-    <p>Working alongside a UI designer gave me direct experience of <strong>cross-functional handoff</strong> — and a clear lesson about what happens when vision isn't communicated precisely. Early in the project I hadn't articulated the design rationale clearly enough, which created rework. I addressed this by introducing a shared decision log and a weekly alignment session. That adjustment was noted in the assessor's feedback as a strength of the submission.</p>
+    <p>That ownership is best demonstrated in the working relationship I had with the UI designer. Working alongside them gave me direct experience of <strong>cross-functional handoff</strong> — and a clear lesson about what happens when vision isn't communicated precisely. Early in the project I hadn't articulated the design rationale clearly enough, which created rework. I addressed this by introducing a shared decision log and a weekly alignment session.</p>
+  </section>
+
+  <!-- UNDERSTANDING THE USERS -->
+  <section class="cs">
+    <h2>Understanding the users <span class="phase-tag">Discover</span></h2>
+    <p>Before designing anything, the team set out to learn why home physiotherapy breaks down. We ran a survey, three user interviews and a literature review. I interviewed an orthopaedic surgeon with experience of physiotherapy, built the journey map, and helped turn the findings into the insights that drove the UX design.</p>
+    <div class="stat-grid">
+      <div class="outcome-box"><div class="outcome-num">37</div><div class="outcome-lbl">Survey responses, plus 3 user interviews and 1 with an orthopaedic surgeon</div></div>
+      <div class="outcome-box"><div class="outcome-num">17%</div><div class="outcome-lbl">Felt very confident they were doing their exercises correctly at home</div></div>
+      <div class="outcome-box"><div class="outcome-num">56%</div><div class="outcome-lbl">Said boredom or low motivation made it hard to keep up</div></div>
+      <div class="outcome-box"><div class="outcome-num">94%</div><div class="outcome-lbl">Said seeing their progress visually was important</div></div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 01</span>
+        <h3>Motivation, not time, is the biggest barrier</h3>
+        <p>More than half of respondents said they stop because exercises feel boring or they lose motivation. Lack of time came much lower, level with pain.</p>
+        <p class="insight-so"><strong>Design response:</strong> a staged programme where finishing one set of exercises unlocks the next, so recovery feels like progress rather than repetition.</p>
+      </div>
+      <figure class="artefact chart" role="img" aria-label="Bar chart of survey answers to: what makes it difficult to keep up with exercises at home? Unmotivated or bored 56%, no reminders or support 34%, painful 25%, no time 25%, not sure I'm doing them right 19%, don't see improvement 19%.">
+        <div class="chart-title">What makes it difficult to keep up with exercises at home?</div>
+          <div class="bar-row"><span class="bar-label">I feel unmotivated or bored</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-val">56%</span></div>
+          <div class="bar-row"><span class="bar-label">I don’t have reminders or support</span><span class="bar-track"><span class="bar-fill" style="width:61%"></span></span><span class="bar-val">34%</span></div>
+          <div class="bar-row"><span class="bar-label">They are painful or uncomfortable</span><span class="bar-track"><span class="bar-fill" style="width:45%"></span></span><span class="bar-val">25%</span></div>
+          <div class="bar-row"><span class="bar-label">I don’t have time</span><span class="bar-track"><span class="bar-fill" style="width:45%"></span></span><span class="bar-val">25%</span></div>
+          <div class="bar-row"><span class="bar-label">I’m not sure I’m doing them right</span><span class="bar-track"><span class="bar-fill" style="width:34%"></span></span><span class="bar-val">19%</span></div>
+          <div class="bar-row"><span class="bar-label">I don’t see improvement</span><span class="bar-track"><span class="bar-fill" style="width:34%"></span></span><span class="bar-val">19%</span></div>
+        <figcaption><strong>Survey</strong> · 32 responses to this question, select all that apply · team research</figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 02</span>
+        <h3>People don’t know if they’re doing it right</h3>
+        <p>“Confidence &amp; Fear” emerged as its own theme when we grouped the findings. Most people were only somewhat confident, feared incorrect form, and avoided exercises when unsure.</p>
+        <p class="insight-so"><strong>Design response:</strong> real-time AR form tracking, so patients get feedback in the moment instead of waiting weeks for their next appointment.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/regain-affinity-map.jpg" loading="lazy" decoding="async" alt="Affinity map grouping research findings into seven themes: progress tracking, confidence and fear, instruction clarity, motivation, reminders and support, digital tools, and physio communication">
+        <figcaption><strong>Affinity map</strong> · team synthesis I contributed to</figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 03</span>
+        <h3>Progress lives in people’s heads</h3>
+        <p>Patients say they feel motivated when they see small improvements, yet they track pain, mobility and progress mentally instead of recording it. The evidence that would keep them going is invisible.</p>
+        <p class="insight-so"><strong>Design response:</strong> a recovery progress bar at the top of the home dashboard, the first thing a returning patient sees.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/regain-empathy-map.jpg" loading="lazy" decoding="async" alt="Empathy map showing what patients say, think, do and feel about home physiotherapy">
+        <figcaption><strong>Empathy map</strong> · team synthesis I contributed to</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- DEFINING THE FOCUS -->
+  <section class="cs">
+    <h2>Defining the focus <span class="phase-tag">Define</span></h2>
+    <p>The research insights informed the creation of a user persona who embodies the feedback and perspectives of the real users we heard from. From there we mapped the journey and framed one question to design for.</p>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 04</span>
+        <h3>One patient to design for</h3>
+        <p>Joe, 55, is recovering from a knee injury with a clinic visit every week or two and exercises at home in between. He wants to exercise correctly without constant supervision and to see clear progress over time.</p>
+        <p class="insight-so"><strong>In his words:</strong> “I want to do my exercises properly and see that they’re working, otherwise it’s easy to forget or give up.”</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/regain-persona.jpg" loading="lazy" decoding="async" alt="Persona of Joe Goldberg, a 55-year-old office professional recovering from a knee injury, with his goals, motivators, pain points and behaviour">
+        <figcaption><strong>Persona</strong> · team artefact, AI-generated portrait</figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 05</span>
+        <h3>Support disappears exactly when motivation drops</h3>
+        <p>I then mapped the journey from injury to long-term recovery. Mood is lowest during the home exercise routine and the motivation drop that follows, the two stages where the patient is alone: low confidence in form, no visible progress, no accountability.</p>
+        <p class="insight-so"><strong>Design response:</strong> this became the stretch of the journey RegAIn concentrates on, with guided sessions, reminders and the PhyGPT assistant between appointments.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/regain-journey-map.jpg" loading="lazy" decoding="async" alt="Journey map across six stages from injury and diagnosis to long-term maintenance, showing actions, thoughts, feelings and pain points, with mood dipping at the home exercise and motivation drop stages">
+        <figcaption><strong>Journey map</strong> · built by me</figcaption>
+      </figure>
+    </div>
+
+    <div class="callout hmw">
+      <p><strong>How might we</strong> help people doing physiotherapy at home stay consistent, confident and motivated, with clear guidance and real-time feedback on their form, visible and meaningful progress, and timely reminders or lightweight contact with their physiotherapist?</p>
+    </div>
   </section>
 
   <!-- APP SCREENS -->
   <section class="cs">
-    <h2>Key screens</h2>
+    <h2>Designing the solution <span class="phase-tag">Ideate · Prototype</span></h2>
     <p>The app is structured around four core areas: a personalised home dashboard, a staged recovery programme, AI-guided exercise sessions with AR form tracking, and a PhyGPT assistant for on-demand support.</p>
 
     <h3>Recovery schedule</h3>
@@ -233,7 +379,8 @@ nav{-webkit-backdrop-filter:blur(16px);}
     </div>
 
     <h3>AR-guided exercise &amp; form tracking</h3>
-    <p>The signature feature: real-time skeleton overlay using AR tracking to detect whether the user is performing each exercise correctly. Green joints indicate correct form; amber and red flag misalignment. This directly addresses the core problem — patients exercising without knowing if they're doing it right.</p>
+    <p>The signature feature: real-time skeleton overlay using AR tracking to detect whether the user is performing each exercise correctly. Green joints indicate correct form; amber and red flag misalignment.</p>
+    <p>The value is in the timing. Incorrect form or execution of a rehab exercise can be assessed and corrected in the moment, rather than weeks later at the next appointment. The intention behind this design choice was to support better patient outcomes and keep motivation high, in exactly the place where users had been showing a lot of uncertainty.</p>
     <div class="phone-grid cols-2 single">
       <div class="phone-wrap">
         <img src="images/regain-ar-tracking-active.png" loading="lazy" decoding="async" alt="AR tracking active">
@@ -242,7 +389,7 @@ nav{-webkit-backdrop-filter:blur(16px);}
     </div>
 
     <h3>Onboarding tour</h3>
-    <p>A five-step contextual onboarding sequence introduces each section of the app in situ — showing the user exactly where each feature lives before they encounter it.</p>
+    <p>A four-step contextual onboarding sequence introduces each section of the app in situ — showing the user exactly where each feature lives before they encounter it.</p>
     <div class="phone-grid cols-4">
       <div class="phone-wrap">
         <img src="images/regain-onboarding-home.png" loading="lazy" decoding="async" alt="Onboarding — Home">
@@ -267,29 +414,64 @@ nav{-webkit-backdrop-filter:blur(16px);}
   <section class="cs">
     <h2>Key design decisions</h2>
     <h3>Staged unlocking rather than open access</h3>
-    <p>The recovery programme uses a stage-gate model — later exercises unlock only when earlier ones are completed. This mirrors the actual physiotherapy progression model and prevents patients from skipping to exercises their body isn't ready for. It also creates a visible sense of progress.</p>
+    <p>The recovery programme uses a stage-gate model — later exercises unlock only when earlier ones are completed. This mirrors the actual physiotherapy progression model and prevents patients from skipping to exercises their body isn't ready for.</p>
+    <p>It also gamifies the process. Each unlocked stage is a visual representation of progress, something users felt was lacking before. Streaks were considered too, but the negative perception of breaking a streak could impair motivation, so they were not included in the final design.</p>
     <h3>AR as feedback, not surveillance</h3>
     <p>A key tension in the design was making AR feel supportive rather than clinical or judgmental. The skeleton overlay uses colour-coded joints with no scores or pass/fail labels — the user sees <em>where</em> form needs adjustment, not a verdict on their performance. Language throughout uses "notice" and "adjust" rather than "wrong" or "incorrect."</p>
     <h3>PhyGPT — AI support within defined boundaries</h3>
     <p>The AI assistant was scoped deliberately: it answers questions about the programme and exercises, but explicitly redirects users to their physiotherapist for clinical decisions. This boundary was a direct response to patient safety concerns raised during research.</p>
   </section>
 
-  <!-- OUTCOMES -->
+  <!-- TESTING AND OUTCOMES -->
   <section class="cs">
-    <h2>Outcomes</h2>
-    <div class="outcome-grid">
-      <div class="outcome-box"><div class="outcome-num">⭐</div><div class="outcome-lbl">Distinction grade from academic assessors</div></div>
-      <div class="outcome-box"><div class="outcome-num">30–70%</div><div class="outcome-lbl">NHS non-completion rate — the problem this directly addresses</div></div>
-      <div class="outcome-box"><div class="outcome-num">4</div><div class="outcome-lbl">Core app sections designed end-to-end: Home, Programme, Workouts, PhyGPT</div></div>
+    <h2>Testing and outcomes <span class="phase-tag">Test</span></h2>
+
+    <div class="outcome-hero">
+      <div class="outcome-hero-kicker">Beyond the brief</div>
+      <div class="outcome-hero-title">An invitation to contribute to a live aftercare product</div>
+      <p>After seeing the prototype, the orthopaedic surgeon I interviewed during the research invited me to support work on a live surgical aftercare platform. Their feedback was that the depth of the research stood out, and that they could see how it would transfer to the context of their product. This is at an early stage. The platform can’t be named at present, and the shape of my involvement is still being defined as the project scope is clarified.</p>
     </div>
-    <p>The assessors specifically noted the clarity of the problem framing, the coherence of the information architecture, and the strength of the final presentation. The AR form-correction feature was highlighted as a genuinely novel solution to a real clinical problem.</p>
+
+    <div class="outcome-grid">
+      <div class="outcome-box"><div class="outcome-num">79.3%</div><div class="outcome-lbl">Distinction overall, one of the highest grades achieved</div></div>
+      <div class="outcome-box"><div class="outcome-num">41</div><div class="outcome-lbl">People informed the design: 37 surveyed, 3 interviewed and 1 orthopaedic surgeon</div></div>
+      <div class="outcome-box"><div class="outcome-num">2</div><div class="outcome-lbl">Usability sessions run on the prototype, with findings logged for the next iteration</div></div>
+    </div>
+
+    <h3>What testing told us</h3>
+    <p>The team ran two usability sessions on the prototype, using exemplar data rather than real patient data. The findings were documented for the next iteration rather than built into this one.</p>
+    <div class="test-cards">
+      <div class="test-card test-good">
+        <h4>What worked</h4>
+        <ul>
+          <li>The structure of appointments and workout sessions was understood without explanation</li>
+          <li>Participants responded positively to the visual nature of the app</li>
+        </ul>
+      </div>
+      <div class="test-card test-fix">
+        <h4>What needs work</h4>
+        <ul>
+          <li>An arrow on the onboarding tour led a participant to tap Home instead of Continue</li>
+          <li>“Skip” opened a feedback flow rather than skipping the exercise</li>
+          <li>The link between the demonstration video and the live camera view was not self-evident</li>
+        </ul>
+      </div>
+      <div class="test-card test-key">
+        <h4>The finding that matters most</h4>
+        <p>Participants hesitated to rely on AI guidance alone in the early stages of recovery. They wanted reassurance from a medical professional first, which points to a hybrid model with visible clinical oversight.</p>
+      </div>
+    </div>
+
+    <h3>Next step: a contained pilot</h3>
+    <p>Further testing is needed to tighten the design iteratively. The primary goal for the next stage is a contained pilot with real patients, so that real user data and real usage can shape each round of changes.</p>
+    <p>In that pilot we would track adherence against the 30–70% non-completion baseline, how many patients feel very confident in their form (17% in our survey), and how much appointment time physiotherapists spend re-teaching exercises.</p>
   </section>
 
   <!-- REFLECTION -->
   <section class="cs">
     <h2>Reflection</h2>
     <p>This was my first experience of designing as part of a team rather than solo, and the learning was as much about collaboration as it was about craft. The lesson about communicating design intent precisely — early and explicitly — has stayed with me and directly shaped how I approach handoff in subsequent projects.</p>
-    <p>If I were to revisit this project, I'd prioritise user testing with actual post-operative patients, which time constraints didn't allow. The AR feature in particular would benefit from real-world validation — whether the skeleton overlay is genuinely legible during exercise, and whether it causes anxiety rather than confidence for certain users, are questions that deserve proper answers.</p>
+    <p>The prototype was tested with exemplar data rather than real patients, so testing with actual post-operative patients is the first thing I would do next. The AR feature in particular would benefit from real-world validation — whether the skeleton overlay is genuinely legible during exercise, and whether it causes anxiety rather than confidence for certain users, are questions that deserve proper answers.</p>
   </section>
 
 </div>
@@ -333,7 +515,7 @@ nav{-webkit-backdrop-filter:blur(16px);}
     if (opener) opener.focus();
   }
 
-  document.querySelectorAll('.screen-wrap img, .phone-wrap img, .phone-shell img, .hero-img-wrap img').forEach(function(img){
+  document.querySelectorAll('.screen-wrap img, .phone-wrap img, .phone-shell img, .hero-img-wrap img, .artefact img').forEach(function(img){
     img.classList.add('zoomable');
     img.tabIndex = 0;
     img.setAttribute('role', 'button');

@@ -11,10 +11,10 @@
 <meta property="og:title" content="Re:View — UX Case Study · Caleb Cuddihy">
 <meta property="og:description" content="A reflective reading companion that observes how you read, never what, and hands the meaning back to you. Solo UX case study, awarded Distinction.">
 <meta property="og:url" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/work_review.html">
-<meta property="og:image" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/og-image.png">
+<meta property="og:image" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/images/og-review.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
-<meta property="og:image:alt" content="Caleb Cuddihy, UX Designer — Design rooted in real human experience">
+<meta property="og:image:alt" content="Re:View case study by Caleb Cuddihy — a reflective reading companion">
 <meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -41,62 +41,9 @@ h1{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;letter-spacing:-0.035em;li
 .hero-sub{font-size:1.05rem;color:var(--mid);max-width:60ch;line-height:1.72;margin-bottom:2rem;}
 .meta-row{display:flex;flex-wrap:wrap;gap:0.8rem;margin-bottom:3rem;}
 .meta-item{background:var(--card);border-radius:10px;padding:0.7rem 1.2rem;}
-.meta-label{font-size:0.68rem;font-weight:600;color:var(--light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.15rem;}
+.meta-label{font-size:0.68rem;font-weight:600;color:var(--mid);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.15rem;}
 .meta-val{font-size:0.88rem;font-weight:600;color:var(--ink);}
 
-/* Carousel */
-.carousel-wrap{
-  position:relative;width:100%;border-radius:20px;overflow:hidden;
-  background:#1a1814;margin-bottom:5rem;
-  box-shadow:0 24px 80px rgba(0,0,0,0.3);
-}
-.carousel-inner{position:relative;width:100%;padding-top:62%;}
-.carousel-slide{
-  position:absolute;inset:0;opacity:0;transition:opacity 0.5s ease;
-}
-.carousel-slide.active{opacity:1;}
-.carousel-slide img{
-  width:100%;height:100%;object-fit:cover;object-position:top center;display:block;
-}
-.carousel-slide:first-child img{object-position:center 30%;}
-.carousel-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.2) 45%,transparent 70%);
-  pointer-events:none;
-}
-.carousel-text{
-  position:absolute;bottom:2rem;left:2rem;right:8rem;color:#fff;
-}
-.carousel-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:-0.02em;line-height:1.1;margin-bottom:0.4rem;}
-.carousel-sub{font-size:0.88rem;color:rgba(255,255,255,0.7);max-width:50ch;}
-.carousel-counter{
-  position:absolute;top:1.5rem;right:1.5rem;
-  font-size:0.72rem;font-weight:600;color:rgba(255,255,255,0.6);
-  letter-spacing:0.08em;
-}
-.carousel-btn{
-  position:absolute;top:50%;transform:translateY(-50%);
-  width:44px;height:44px;border-radius:50%;
-  background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);
-  border:1px solid rgba(255,255,255,0.2);
-  color:#fff;font-size:1.1rem;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  transition:background 0.2s;z-index:10;
-}
-.carousel-btn:hover{background:rgba(255,255,255,0.28);}
-.carousel-btn.prev{left:1rem;}
-.carousel-btn.next{right:1rem;}
-.carousel-dots{
-  position:absolute;bottom:1.5rem;right:1.5rem;
-  display:flex;gap:5px;align-items:center;
-}
-.carousel-dots button{
-  width:7px;height:7px;border-radius:50%;
-  border:1.5px solid rgba(255,255,255,0.7);
-  background:transparent;cursor:pointer;padding:0;
-  transition:all 0.25s;
-}
-.carousel-dots button.active{background:#fff;width:9px;height:9px;}
 
 /* Sections */
 section.cs{padding:4rem 0;border-top:1px solid var(--border);}
@@ -115,12 +62,12 @@ li{font-size:1rem;color:var(--mid);line-height:1.75;margin-bottom:0.3rem;}
 .screen-grid.cols-3{grid-template-columns:1fr 1fr 1fr;}
 .screen-wrap{border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);border:1px solid var(--border);}
 .screen-wrap img{width:100%;display:block;}
-.screen-label{padding:0.7rem 1rem;font-size:0.75rem;font-weight:600;color:var(--light);background:var(--card);border-top:1px solid var(--border);}
+.screen-label{padding:0.7rem 1rem;font-size:0.75rem;font-weight:600;color:var(--mid);background:var(--card);border-top:1px solid var(--border);}
 
 .outcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0;}
 .outcome-box{background:var(--card);border-radius:12px;padding:1.4rem;}
 .outcome-num{font-size:2rem;font-weight:800;color:var(--ink);letter-spacing:-0.03em;}
-.outcome-lbl{font-size:0.78rem;color:var(--light);margin-top:0.2rem;line-height:1.4;}
+.outcome-lbl{font-size:0.78rem;color:var(--mid);margin-top:0.2rem;line-height:1.4;}
 
 footer{border-top:1px solid var(--border);padding:1.8rem 2.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;color:var(--light);}
 footer a{color:var(--mid);text-decoration:none;}
@@ -128,7 +75,6 @@ footer a{color:var(--mid);text-decoration:none;}
 @media(max-width:700px){
   .screen-grid.cols-2,.screen-grid.cols-3{grid-template-columns:1fr;}
   .outcome-grid{grid-template-columns:1fr 1fr;}
-  .carousel-text{bottom:3.5rem;}
 }
 
 /* ── MOBILE & RESPONSIVE ── */
@@ -146,7 +92,7 @@ nav{-webkit-backdrop-filter:blur(16px);}
   .hero-sub{font-size:1rem;}
   .meta-row{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;margin-bottom:2rem;}
   .meta-item{padding:0.65rem 0.9rem;}
-  .hero-img-wrap,.carousel-wrap{margin-bottom:3rem;}
+  .hero-img-wrap{margin-bottom:3rem;}
   section.cs{padding:2.75rem 0;}
   h2{font-size:1.5rem;}
   h3{margin-top:1.6rem;}
@@ -175,14 +121,6 @@ nav{-webkit-backdrop-filter:blur(16px);}
 .lb-close{position:fixed;top:0.8rem;right:0.8rem;z-index:1;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);background:rgba(0,0,0,0.6);color:#fff;font-size:1.1rem;cursor:pointer;}
 .lb-hint{position:fixed;left:50%;bottom:1rem;transform:translateX(-50%);background:rgba(0,0,0,0.7);color:#fff;font-size:0.75rem;padding:0.35rem 0.9rem;border-radius:100px;pointer-events:none;white-space:nowrap;}
 @media(max-width:640px){
-  .carousel-wrap{border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,0.25);}
-  .carousel-text{left:1rem;right:1rem;bottom:1rem;}
-  .carousel-title{font-size:1.2rem;}
-  .carousel-sub,.carousel-dots{display:none;}
-  .carousel-counter{top:0.8rem;right:0.8rem;font-size:0.68rem;color:#fff;background:rgba(0,0,0,0.6);padding:0.2rem 0.6rem;border-radius:100px;}
-  .carousel-btn{width:36px;height:36px;font-size:0.95rem;}
-  .carousel-btn.prev{left:0.6rem;}
-  .carousel-btn.next{right:0.6rem;}
   .screen-grid{gap:1rem;}
 }
 /* Desktop: centre the hero on one axis; intro text spans the hero image width */
@@ -190,7 +128,82 @@ nav{-webkit-backdrop-filter:blur(16px);}
   .cs-hero{text-align:center;}
   .cs-hero .hero-sub{max-width:none;margin-left:auto;margin-right:auto;}
   .cs-hero .meta-row{justify-content:center;}
-  .cs-hero .carousel-wrap{text-align:left;}
+}
+/* Research sections: method tag, stats, insight + artefact pairs */
+.phase-tag{display:inline-block;vertical-align:middle;margin-left:0.6rem;font-size:0.7rem;font-weight:600;letter-spacing:0;padding:0.22rem 0.7rem;border-radius:100px;background:#ede9ff;color:#4338ca;}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0 0.5rem;}
+.insight{display:grid;grid-template-columns:1fr 1.15fr;gap:2.5rem;align-items:center;padding:2.2rem 0;border-top:1px solid var(--border);margin-top:2.2rem;}
+.insight + .insight{margin-top:0;}
+.insight-num{font-size:0.75rem;font-weight:700;color:#5b4fcf;letter-spacing:0.04em;text-transform:uppercase;}
+.insight h3{margin-top:0.4rem;font-size:1.25rem;letter-spacing:-0.015em;line-height:1.25;}
+.insight-so{font-size:0.95rem;margin-bottom:0;}
+.after-insights{padding-top:2.2rem;border-top:1px solid var(--border);margin-top:0;font-size:1.25rem;}
+.artefact{margin:0;}
+.artefact img{width:100%;display:block;border-radius:12px;border:1px solid var(--border);box-shadow:0 0 24px rgba(0,0,0,0.07);}
+.artefact figcaption{font-size:0.75rem;color:var(--mid);margin-top:0.7rem;line-height:1.5;}
+.artefact figcaption strong{color:var(--mid);font-weight:600;}
+.artefact.gap,.artefact.compare{background:var(--card);border-radius:12px;padding:1.4rem;}
+.gap-cols,.compare-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.gap-cols > div,.compare-cols > div{background:#fff;border-radius:10px;padding:1rem;}
+.gap-cols h4,.compare-cols h4{font-size:0.72rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--mid);margin-bottom:0.6rem;line-height:1.4;}
+.gap-cols ul,.compare-cols ul{margin:0 0 0 1rem;} .gap-cols li,.compare-cols li{font-size:0.82rem;line-height:1.5;margin-bottom:0.25rem;}
+.gap-few,.compare-said{background:#ede9ff !important;} .gap-few h4,.compare-said h4{color:#4338ca;} .gap-few li,.compare-said li{color:#3730a3;}
+.imp-wrap{margin:1.5rem 0 0;overflow-x:auto;}
+.imp{width:100%;border-collapse:collapse;min-width:560px;}
+.imp th,.imp td{text-align:left;vertical-align:top;padding:0.8rem 1rem 0.8rem 0;font-size:0.86rem;line-height:1.55;color:var(--mid);border-top:1px solid var(--border);font-weight:400;}
+.imp thead th{border-top:0;font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--light);padding-top:0;}
+.imp tbody th{color:var(--ink);font-weight:600;white-space:nowrap;} .imp td:last-child{color:var(--ink);}
+/* Testing and iterating */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.2rem 0 1.5rem;}
+.step{background:var(--card);border-radius:12px;padding:1.3rem;}
+.step-tag{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--mid);margin-bottom:0.5rem;}
+.step-num{font-size:1.7rem;font-weight:800;letter-spacing:-0.03em;color:var(--ink);line-height:1.1;margin-bottom:0.5rem;}
+.step p{font-size:0.9rem;line-height:1.6;margin:0;}
+.step-done{background:#ede9ff;} .step-done .step-tag{color:#4338ca;} .step-done .step-num{color:#4338ca;} .step-done p{color:#3730a3;}
+.cmp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.2rem 0 0.5rem;}
+.cmp{border-radius:12px;padding:1.3rem;}
+.cmp-chip{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:0.2rem 0.6rem;border-radius:100px;margin-bottom:0.7rem;}
+.cmp h4{font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:0.7rem;line-height:1.3;}
+.cmp dl{margin:0;} .cmp dt{font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--mid);margin-top:0.6rem;}
+.cmp dd{margin:0.15rem 0 0;font-size:0.88rem;line-height:1.55;color:#3a3a3a;}
+.cmp-amber{background:#fff4e5;} .cmp-amber .cmp-chip{background:#ffe0b2;color:#8a4b00;}
+.cmp-green{background:#e8faf1;} .cmp-green .cmp-chip{background:#c8efd9;color:#17693a;}
+@media(max-width:820px){.cmp-cards{grid-template-columns:1fr;}}
+.changed{margin:0.4rem 0 1.2rem 1.2rem;} .changed li{margin-bottom:0.6rem;} .changed strong{color:var(--ink);font-weight:600;}
+@media(max-width:820px){
+  .stat-grid{grid-template-columns:1fr 1fr;}
+  .insight{grid-template-columns:1fr;gap:1.4rem;padding:1.8rem 0;margin-top:1.8rem;}
+  .steps{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  .stat-grid{gap:0.6rem;}
+  .stat-grid .outcome-box{display:block;padding:1rem;}
+  .gap-cols,.compare-cols{grid-template-columns:1fr;}
+  /* Themes table: one stacked block per theme, so the takeaway is never off-screen */
+  .imp-wrap{overflow-x:visible;}
+  .imp{min-width:0;display:block;}
+  .imp thead{display:none;}
+  .imp tbody,.imp tr{display:block;}
+  .imp tr{padding:1rem 0;border-top:1px solid var(--border);}
+  .imp th,.imp td{display:block;border:0;padding:0.15rem 0;font-size:0.9rem;}
+  .imp tbody th{white-space:normal;font-size:0.95rem;}
+  .imp td:last-child{margin-top:0.35rem;}
+  .imp td:last-child::before{content:'Takeaway: ';font-weight:600;}
+}
+/* Static hero and one row per screen */
+.hero-img-wrap{width:100%;border-radius:16px;overflow:hidden;margin-bottom:5rem;box-shadow:0 8px 40px rgba(0,0,0,0.12),0 2px 8px rgba(0,0,0,0.08);border:1px solid var(--border);}
+.hero-img-wrap img{width:100%;display:block;}
+.screen-group{font-size:1.25rem;margin-top:2.6rem;}
+.screen-row{display:grid;grid-template-columns:0.85fr 1.5fr;gap:2.2rem;align-items:center;padding:1.8rem 0;border-top:1px solid var(--border);}
+.screen-group + .screen-row,.screen-group + p + .screen-row{margin-top:1.2rem;}
+.screen-eyebrow{font-size:0.72rem;font-weight:700;color:#5b4fcf;letter-spacing:0.05em;text-transform:uppercase;}
+.screen-row h4{font-size:1.1rem;font-weight:700;letter-spacing:-0.01em;margin:0.3rem 0 0.5rem;color:var(--ink);}
+.screen-row p{font-size:0.95rem;margin:0;}
+@media(max-width:820px){
+  .screen-row{grid-template-columns:1fr;gap:1.1rem;padding:1.5rem 0;}
+}
+@media(max-width:640px){
+  .hero-img-wrap{margin-bottom:3rem;border-radius:12px;}
 }
 </style>
 </head>
@@ -213,139 +226,12 @@ nav{-webkit-backdrop-filter:blur(16px);}
       <div class="meta-item"><div class="meta-label">Type</div><div class="meta-val">Solo Project</div></div>
       <div class="meta-item"><div class="meta-label">Platform</div><div class="meta-val">Desktop</div></div>
       <div class="meta-item"><div class="meta-label">Focus</div><div class="meta-val">Reflective · AI · Reading</div></div>
-      <div class="meta-item"><div class="meta-label">Tools</div><div class="meta-val">Figma · Figma Make</div></div>
-      <div class="meta-item"><div class="meta-label">Outcome</div><div class="meta-val">⭐ Distinction</div></div>
+      <div class="meta-item"><div class="meta-label">Tools</div><div class="meta-val">Figma · Lovable · Claude</div></div>
+      <div class="meta-item"><div class="meta-label">Outcome</div><div class="meta-val">⭐ Distinction (marked component)</div></div>
     </div>
 
-    <!-- Carousel -->
-    <div class="carousel-wrap">
-      <div class="carousel-inner" id="rv-carousel">
-        <div class="carousel-slide active">
-          <img src="images/review-cover.png" alt="Re:View">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Re:View</div>
-            <div class="carousel-sub">Reading, reflected.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-welcome.png" loading="lazy" decoding="async" alt="Welcome">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Welcome</div>
-            <div class="carousel-sub">Read the way you like. Reflect afterwards, together.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-how-it-works.png" loading="lazy" decoding="async" alt="How it works">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">How it works</div>
-            <div class="carousel-sub">It watches how you move through a page — not what the words mean.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-after-reading.png" loading="lazy" decoding="async" alt="After reading">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">After reading</div>
-            <div class="carousel-sub">Each session leaves a record of how you read, not what you read.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-reflect-together.png" loading="lazy" decoding="async" alt="Reflect together">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Reflect together</div>
-            <div class="carousel-sub">When you agree or challenge an observation, the system learns.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-system-learns.png" loading="lazy" decoding="async" alt="System learns">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">System learns</div>
-            <div class="carousel-sub">Your context always outranks the system's guess.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-thanks-noted.png" loading="lazy" decoding="async" alt="Thanks — noted">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Thanks — noted</div>
-            <div class="carousel-sub">This pattern will carry more weight in future sessions.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-dashboard.png" loading="lazy" decoding="async" alt="Dashboard">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Dashboard</div>
-            <div class="carousel-sub">Sessions, tools, and reading history at a glance.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-reading-session.png" loading="lazy" decoding="async" alt="Reading session">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Reading session</div>
-            <div class="carousel-sub">Observation stays off until you start, ends the moment you finish.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-session-complete.png" loading="lazy" decoding="async" alt="Session complete">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Session complete</div>
-            <div class="carousel-sub">Observation has ended and permission has expired.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-reflection-summary.png" loading="lazy" decoding="async" alt="Reflection summary">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Reflection summary</div>
-            <div class="carousel-sub">A description, not an assessment. Nothing here is a judgement.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-behaviour-timeline.png" loading="lazy" decoding="async" alt="Behaviour timeline">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Behaviour timeline</div>
-            <div class="carousel-sub">Moments from your reading — each one with its evidence attached.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-insight-cards.png" loading="lazy" decoding="async" alt="Insight cards">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Insight cards</div>
-            <div class="carousel-sub">What Re:View observed — with confidence shown, always.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-reflect-together-2.png" loading="lazy" decoding="async" alt="Reflect together">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Reflect together</div>
-            <div class="carousel-sub">Write as much or as little as you like. Your reflections are yours.</div>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/review-reading-journey.png" loading="lazy" decoding="async" alt="Reading journey">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-text">
-            <div class="carousel-title">Reading journey</div>
-            <div class="carousel-sub">Patterns, not performance. Nothing here is a target.</div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-counter" id="rv-counter">1 / 15</div>
-      <button class="carousel-btn prev" onclick="rvNav(-1)" aria-label="Previous screen">&#8592;</button>
-      <button class="carousel-btn next" onclick="rvNav(1)" aria-label="Next screen">&#8594;</button>
-      <div class="carousel-dots" id="rv-dots"><button class="active" onclick="rvGo(0)" aria-label="Slide 1"></button><button onclick="rvGo(1)" aria-label="Slide 2"></button><button onclick="rvGo(2)" aria-label="Slide 3"></button><button onclick="rvGo(3)" aria-label="Slide 4"></button><button onclick="rvGo(4)" aria-label="Slide 5"></button><button onclick="rvGo(5)" aria-label="Slide 6"></button><button onclick="rvGo(6)" aria-label="Slide 7"></button><button onclick="rvGo(7)" aria-label="Slide 8"></button><button onclick="rvGo(8)" aria-label="Slide 9"></button><button onclick="rvGo(9)" aria-label="Slide 10"></button><button onclick="rvGo(10)" aria-label="Slide 11"></button><button onclick="rvGo(11)" aria-label="Slide 12"></button><button onclick="rvGo(12)" aria-label="Slide 13"></button><button onclick="rvGo(13)" aria-label="Slide 14"></button><button onclick="rvGo(14)" aria-label="Slide 15"></button>
-      </div>
+    <div class="hero-img-wrap">
+      <img src="images/review-dashboard.png" alt="Re:View dashboard showing recent sessions, reflective tools and reading history">
     </div>
   </div>
 
@@ -358,8 +244,133 @@ nav{-webkit-backdrop-filter:blur(16px);}
     </div>
   </section>
 
+  <!-- UNDERSTANDING THE USERS -->
   <section class="cs">
-    <h2>Core principles</h2>
+    <h2>Understanding the users <span class="phase-tag">Discover</span></h2>
+    <p>Re:View was my MSc dissertation. I combined the Double Diamond with design thinking: the pairing encouraged freedom and breadth in research and ideation early on, then brought the work back into focus as the project moved into each new phase. The aim was that every decision would be backed by evidence and user insight, with alternatives considered.</p>
+    <div class="stat-grid">
+      <div class="outcome-box"><div class="outcome-num">43</div><div class="outcome-lbl">Survey respondents</div></div>
+      <div class="outcome-box"><div class="outcome-num">7</div><div class="outcome-lbl">User interviews</div></div>
+      <div class="outcome-box"><div class="outcome-num">3</div><div class="outcome-lbl">Expert interviews, in workplace neurodiversity and education</div></div>
+      <div class="outcome-box"><div class="outcome-num">3</div><div class="outcome-lbl">Participants in an exploratory eye-tracking study</div></div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 01</span>
+        <h3>Readers notice lost focus only after it has happened</h3>
+        <p>Readers have limited awareness of their own reading behaviour. They recognise lost focus afterwards, skip words without noticing, and become less self-aware the longer a reading session runs.</p>
+        <p class="insight-so"><strong>Design response:</strong> show reading behaviour back to the reader after the session, when they are in a position to make sense of it.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/review-affinity-map.jpg" loading="lazy" decoding="async" alt="Affinity map grouping research findings into themes including behaviours, coping strategies, concentration and fatigue, self-awareness, comprehension, AI usage, AI trust, feedback, and agency and control">
+        <figcaption><strong>Affinity map</strong> · survey and interview findings in nine themes</figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 02</span>
+        <h3>AI already helps people read, but not to understand how they read</h3>
+        <p>Readers use AI to summarise, simplify and check their understanding. A review of the tools on the market showed the same pattern: products optimise for speed and efficiency, and very few support reflection or self-awareness.</p>
+        <p class="insight-so"><strong>Design response:</strong> position Re:View in that gap, as reflective, autonomy-preserving support rather than another summariser.</p>
+      </div>
+      <figure class="artefact gap">
+        <div class="gap-cols">
+          <div>
+            <h4>Most existing products prioritise</h4>
+            <ul><li>Speed</li><li>Efficiency</li><li>Automation</li><li>Simplification</li><li>Productivity</li><li>Accessibility delivery</li></ul>
+          </div>
+          <div class="gap-few">
+            <h4>Very few systems strongly support</h4>
+            <ul><li>Reflective reading awareness</li><li>Metacognition</li><li>Behavioural self-awareness</li><li>Calm AI interaction</li><li>Autonomy-preserving support</li><li>Ethical adaptive feedback</li><li>Non-intrusive AI assistance</li></ul>
+          </div>
+        </div>
+        <figcaption><strong>Industry gap</strong> · from a competitor analysis of eight categories of AI reading tool</figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 03</span>
+        <h3>Trust depends on how the AI behaves, not whether it is there</h3>
+        <p>Interviews surfaced unease about being observed, judged, replaced or made dependent. Trust was shaped less by the presence of AI than by how respectfully it communicates, explains its observations and leaves the reader in control. In readers’ words: “Please don’t interrupt me while I’m reading” and “I don’t want AI telling me what to do.”</p>
+        <p class="insight-so"><strong>Design response:</strong> observation is opt-in and visible, nothing interrupts reading, and feedback is gentle and optional.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/review-empathy-map.jpg" loading="lazy" decoding="async" alt="Empathy map canvas covering who the readers are, what they need to do, see, say, do and hear, and their pains and gains">
+        <figcaption><strong>Empathy map</strong></figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 04</span>
+        <h3>Gaze is not comprehension</h3>
+        <p>An exploratory eye-tracking study tested whether reading behaviour could be observed at all. It could: the approach proved viable. It also showed its limit. One participant read attentively by every gaze measure, yet described feeling less absorbed on the later pages.</p>
+        <p class="insight-so"><strong>Design response:</strong> eye tracking was left out of the final design after user feedback, but the lesson stayed. Behavioural signals are prompts for reflection, never conclusions, and the reader’s account outranks the system’s.</p>
+      </div>
+      <figure class="artefact compare">
+        <div class="compare-cols">
+          <div>
+            <h4>What the eye tracker showed</h4>
+            <ul><li>Steady, forward reading with no returns to earlier pages</li><li>Time on each page rising from 81 to 107 seconds</li></ul>
+          </div>
+          <div class="compare-said">
+            <h4>What the reader said</h4>
+            <ul><li>Felt less absorbed on the later pages</li><li>Rising room noise broke their concentration</li></ul>
+          </div>
+        </div>
+        <figcaption><strong>Eye-tracking study</strong> · exploratory, 3 participants, run as a proof of viability</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- DEFINING THE FOCUS -->
+  <section class="cs">
+    <h2>Defining the focus <span class="phase-tag">Define</span></h2>
+    <p>Synthesis turned the research into six themes, each with a takeaway the design had to honour. A separate project working from a similar brief explored a proactive system that makes changes in real time. Re:View deliberately took the other path: reflective support that deepens a reader’s understanding of their own behaviour while keeping them in control.</p>
+    <div class="imp-wrap">
+      <table class="imp">
+        <thead><tr><th scope="col">Theme</th><th scope="col">Headline insight</th><th scope="col">Key takeaway</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Reading behaviour</th><td>Readers struggle to recognise changes in their own reading behaviour as they happen.</td><td>Support awareness of reading behaviours rather than simply improving task performance.</td></tr>
+          <tr><th scope="row">Awareness</th><td>Readers have limited awareness of their reading behaviours and value help interpreting them.</td><td>Make invisible reading behaviours visible in ways that encourage reflection rather than judgement.</td></tr>
+          <tr><th scope="row">Trust and agency</th><td>Trust is shaped less by the presence of AI than by how respectfully it communicates.</td><td>Preserve agency by making AI support transparent, optional and user-controlled.</td></tr>
+          <tr><th scope="row">Communication of feedback</th><td>Readers get more from meaningful explanations than from raw behavioural data.</td><td>Explain observations in meaningful ways rather than overwhelming users with data.</td></tr>
+          <tr><th scope="row">Style</th><td>Readers value AI support that stays unobtrusive and secondary to the reading task.</td><td>Keep the system calm, unobtrusive and secondary to the reading experience.</td></tr>
+          <tr><th scope="row">Reading context</th><td>Reading behaviour is highly contextual: goals, devices and environments differ.</td><td>Design for the context in which reading occurs rather than assuming a single experience.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 05</span>
+        <h3>Six principles for trustworthy reflective AI</h3>
+        <p>The takeaways became six design principles: permission before observation, evidence before conclusions, reflection over instruction, transparency builds trust, the user owns interpretation, and learning through collaboration.</p>
+        <p class="insight-so"><strong>Design response:</strong> they became the test every screen and every line of copy had to pass.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/review-design-principles.jpg" loading="lazy" decoding="async" alt="Six design principles for trustworthy reflective AI, each with its design implications">
+        <figcaption><strong>Design principles</strong></figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 06</span>
+        <h3>The AI supports interpretation; the reader keeps authority</h3>
+        <p>A conversation model mapped the exchange between reader and system across six stages, from establishing trust and granting permission through to collaborative interpretation and learning over time. For each stage it sets out what the reader does, what the system does and the shared understanding between them.</p>
+        <p class="insight-so"><strong>Design response:</strong> the onboarding, the session flow and the “Reflect together” tool follow these stages in order.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/review-conversation-model.jpg" loading="lazy" decoding="async" alt="Conversation model showing six stages of collaborative reflection between the user and the AI companion">
+        <figcaption><strong>Conversation model</strong></figcaption>
+      </figure>
+    </div>
+
+    <h3 class="after-insights">Four principles a reader notices most</h3>
     <h3>Permission, always</h3>
     <p>Observation begins only when the user starts a session, and ends the moment they finish. Nothing is tracked outside that window. The system is transparent about when it is and isn't watching — and the onboarding makes this the first thing a new user learns.</p>
     <h3>No interruptions while reading</h3>
@@ -371,75 +382,155 @@ nav{-webkit-backdrop-filter:blur(16px);}
   </section>
 
   <section class="cs">
-    <h2>Key screens</h2>
+    <h2>Designing the solution <span class="phase-tag">Develop</span></h2>
+    <p>The low-fi prototype was hand-drawn and tested as a hard copy. From mid-fi onwards I designed primarily in Figma. Lovable was used for fast iteration, visualising different styles to gauge how well they suited the project’s aims without spending excess time and resource. A more minimal approach, with elements of Claude, later supported rapid iteration and experimentation with edits. The final designs were built and wired in Figma.</p>
 
-    <h3>Onboarding</h3>
-    <p>A four-step onboarding flow establishes the trust model before the reader ever opens a book. Permission, no interruptions, reader interpretation, and the system's learning loop — each introduced clearly and without jargon.</p>
-    <div class="screen-grid cols-2">
-      <div class="screen-wrap">
-        <img src="images/review-welcome.png" loading="lazy" decoding="async" alt="Onboarding step 1">
-        <div class="screen-label">Step 1 — Read the way you like</div>
+    <h3 class="screen-group">Onboarding</h3>
+    <p>A short onboarding flow establishes the trust model before the reader ever opens a book. Permission, no interruptions, reader interpretation, and the system’s learning loop — each introduced clearly and without jargon.</p>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Step 1</span>
+        <h4>Welcome</h4>
+        <p>The first screen makes the promise the rest of the product keeps: read the way you like, and reflect afterwards, together.</p>
       </div>
       <div class="screen-wrap">
-        <img src="images/review-how-it-works.png" loading="lazy" decoding="async" alt="Onboarding step 2">
-        <div class="screen-label">Step 2 — How it works</div>
+        <img src="images/review-welcome.png" loading="lazy" decoding="async" alt="Welcome screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Step 2</span>
+        <h4>How it works</h4>
+        <p>Explains what Re:View observes, and just as clearly what it does not. It watches how you move through a page, not what the words mean.</p>
       </div>
       <div class="screen-wrap">
-        <img src="images/review-after-reading.png" loading="lazy" decoding="async" alt="Onboarding step 3">
-        <div class="screen-label">Step 3 — After reading</div>
+        <img src="images/review-how-it-works.png" loading="lazy" decoding="async" alt="How it works screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Step 3</span>
+        <h4>After reading</h4>
+        <p>Sets the expectation for what comes back: each session leaves a record of how you read, not what you read.</p>
       </div>
       <div class="screen-wrap">
-        <img src="images/review-reflect-together.png" loading="lazy" decoding="async" alt="Onboarding step 4">
-        <div class="screen-label">Step 4 — Reflect together</div>
+        <img src="images/review-after-reading.png" loading="lazy" decoding="async" alt="After reading screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Step 4</span>
+        <h4>Reflect together</h4>
+        <p>Introduces the learning loop. When the reader agrees with or challenges an observation, the system learns from it.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-reflect-together.png" loading="lazy" decoding="async" alt="Reflect together screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Challenging an observation</span>
+        <h4>The system learns</h4>
+        <p>The reader can disagree with any observation. Their context always outranks the system’s guess.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-system-learns.png" loading="lazy" decoding="async" alt="The system learns screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Challenging an observation</span>
+        <h4>Thanks — noted</h4>
+        <p>The correction is acknowledged plainly, and the reader is told how it will be used: this pattern will carry more weight in future sessions.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-thanks-noted.png" loading="lazy" decoding="async" alt="Thanks — noted screen">
       </div>
     </div>
 
-    <h3>Dashboard</h3>
-    <p>The home screen shows reading history at a glance — recent sessions, total time, moments noticed — and gives direct access to all reflective tools. The "Start reading" button is prominent; the observation reminder is calm and persistent at the bottom of the sidebar.</p>
-    <div class="screen-wrap">
-      <img src="images/review-dashboard.png" loading="lazy" decoding="async" alt="Re:View dashboard">
-      <div class="screen-label">Dashboard — sessions, tools, reading history</div>
-    </div>
-
-    <h3>Reading session &amp; session end</h3>
-    <p>The reading screen is intentionally minimal — a floating timer widget is the only indication the system is active. On session end, a modal confirms that observation has ended and permission has expired, then offers two routes: back to the dashboard, or straight into reflection.</p>
-    <div class="screen-grid cols-2">
-      <div class="screen-wrap">
-        <img src="images/review-reading-session.png" loading="lazy" decoding="async" alt="Active reading session">
-        <div class="screen-label">Reading — minimal UI, observation active</div>
+    <h3 class="screen-group">The core app</h3>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Home</span>
+        <h4>Dashboard</h4>
+        <p>The home screen shows reading history at a glance — recent sessions, total time, moments noticed — and gives direct access to all reflective tools. The “Start reading” button is prominent; the observation reminder is calm and persistent at the bottom of the sidebar.</p>
       </div>
       <div class="screen-wrap">
-        <img src="images/review-session-complete.png" loading="lazy" decoding="async" alt="Session complete">
-        <div class="screen-label">Session complete — observation ended</div>
+        <img src="images/review-dashboard.png" loading="lazy" decoding="async" alt="Dashboard screen">
       </div>
     </div>
-
-    <h3>Reflection tools</h3>
-    <p>Four tools give readers different ways into their session data: a summary of the session as a whole, a behaviour timeline of individual moments, AI-generated insight cards with confidence shown, and a free-text reflection journal.</p>
-    <div class="screen-grid cols-2">
-      <div class="screen-wrap">
-        <img src="images/review-reflection-summary.png" loading="lazy" decoding="async" alt="Reflection summary">
-        <div class="screen-label">Reflection summary — description, not assessment</div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Reading</span>
+        <h4>Reading session</h4>
+        <p>The reading screen is intentionally minimal. A floating timer widget is the only indication the system is active, and observation stays off until the reader starts.</p>
       </div>
       <div class="screen-wrap">
-        <img src="images/review-behaviour-timeline.png" loading="lazy" decoding="async" alt="Behaviour timeline">
-        <div class="screen-label">Behaviour timeline — moments with evidence</div>
+        <img src="images/review-reading-session.png" loading="lazy" decoding="async" alt="Reading session screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Reading</span>
+        <h4>Session complete</h4>
+        <p>On session end, a modal confirms that observation has ended and permission has expired, then offers two routes: back to the dashboard, or straight into reflection.</p>
       </div>
       <div class="screen-wrap">
-        <img src="images/review-insight-cards.png" loading="lazy" decoding="async" alt="Insight cards">
-        <div class="screen-label">Insight cards — confidence shown, always</div>
-      </div>
-      <div class="screen-wrap">
-        <img src="images/review-reflect-together-2.png" loading="lazy" decoding="async" alt="Reflect together">
-        <div class="screen-label">Reflect together — free text, saved privately</div>
+        <img src="images/review-session-complete.png" loading="lazy" decoding="async" alt="Session complete screen">
       </div>
     </div>
 
-    <h3>Reading journey</h3>
-    <p>The reading journey view surfaces patterns across sessions — time spent, reading rhythm, and cross-session trends — framed always as patterns rather than performance. There is no target to hit and nothing to keep up with.</p>
-    <div class="screen-wrap">
-      <img src="images/review-reading-journey.png" loading="lazy" decoding="async" alt="Reading journey">
-      <div class="screen-label">Reading journey — patterns, not performance</div>
+    <h3 class="screen-group">Reflection tools</h3>
+    <p>Four tools give readers different ways into their session data.</p>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Tool 1</span>
+        <h4>Reflection summary</h4>
+        <p>The session as a whole, written as a description, not an assessment. Nothing here is a judgement.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-reflection-summary.png" loading="lazy" decoding="async" alt="Reflection summary screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Tool 2</span>
+        <h4>Behaviour timeline</h4>
+        <p>Individual moments from the session, each one with its evidence attached.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-behaviour-timeline.png" loading="lazy" decoding="async" alt="Behaviour timeline screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Tool 3</span>
+        <h4>Insight cards</h4>
+        <p>What Re:View observed, with the system’s confidence shown on every card and a way to say “that doesn’t seem right”.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-insight-cards.png" loading="lazy" decoding="async" alt="Insight cards screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Tool 4</span>
+        <h4>Reflect together</h4>
+        <p>A free-text reflection journal, saved privately. Write as much or as little as you like.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-reflect-together-2.png" loading="lazy" decoding="async" alt="Reflect together screen">
+      </div>
+    </div>
+    <div class="screen-row">
+      <div>
+        <span class="screen-eyebrow">Across sessions</span>
+        <h4>Reading journey</h4>
+        <p>Surfaces patterns across sessions — time spent, reading rhythm and longer trends — framed always as patterns rather than performance. There is no target to hit and nothing to keep up with.</p>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-reading-journey.png" loading="lazy" decoding="async" alt="Reading journey screen">
+      </div>
     </div>
   </section>
 
@@ -453,20 +544,104 @@ nav{-webkit-backdrop-filter:blur(16px);}
     <p>Most analytics tools surface data and stop. Re:View's central hypothesis is that the most valuable moment is <em>after</em> the data is shown — when the reader decides what it means. The "Reflect together" tool and the system's ability to update its model based on reader corrections are the features that make Re:View a companion rather than a tracker.</p>
   </section>
 
+  <!-- TESTING AND ITERATING -->
+  <section class="cs">
+    <h2>Testing and iterating <span class="phase-tag">Deliver · Test</span></h2>
+    <p>I tested three prototypes, from paper sketches through mid-fidelity to the hi-fi design, with five participants in each round. What they found changed the product.</p>
+
+    <h3>The confidence score: from misread by everyone to understood by everyone</h3>
+    <div class="steps">
+      <div class="step">
+        <span class="step-tag">Low-fi</span>
+        <div class="step-num">5 of 5</div>
+        <p>participants misunderstood the confidence score, reading it as their reading ability, their comprehension or their own confidence. The AI’s uncertainty was being mistaken for an assessment of the reader.</p>
+      </div>
+      <div class="step">
+        <span class="step-tag">Mid-fi</span>
+        <div class="step-num">4 of 5</div>
+        <p>still misunderstood it after I added supporting explanations. “I don’t understand if it’s from my side or… the tool’s side.” The wording had changed, but the underlying mental model was still wrong.</p>
+      </div>
+      <div class="step step-done">
+        <span class="step-tag">Hi-fi</span>
+        <div class="step-num">5 of 5</div>
+        <p>interpreted the score correctly, after a redesign that labelled it as the system’s confidence and separated evidence from interpretation. Three of them identified some minor lingering ambiguity about what the percentage represented. Severity fell from high to medium.</p>
+      </div>
+    </div>
+    <p><strong>Improved, with minor ambiguity remaining.</strong> To address it, the final wording became “System confidence in this interpretation”, with an explanation of what contributes to the score. It is the first thing I would test again.</p>
+    <div class="screen-grid cols-2">
+      <div class="screen-wrap">
+        <img src="images/review-lowfi-insight-cards.jpg" loading="lazy" decoding="async" alt="Paper sketch of the insight cards screen with a bar labelled Confidence 70%">
+        <div class="screen-label">Low-fi sketch — “Confidence 70%”, read as a score for the reader</div>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-insight-cards.png" loading="lazy" decoding="async" alt="Final insight cards screen where each observation shows a labelled system confidence bar">
+        <div class="screen-label">Hi-fi — relabelled “System confidence”, with the reader able to disagree</div>
+      </div>
+    </div>
+
+    <h3>Did the changes work? Mid-fi to hi-fi</h3>
+    <div class="cmp-cards">
+      <div class="cmp cmp-amber">
+        <span class="cmp-chip">Improved, minor ambiguity remaining</span>
+        <h4>System confidence</h4>
+        <dl>
+          <dt>Mid-fi</dt><dd>4 of 5 read the score as their own reading confidence or performance. High severity.</dd>
+          <dt>Hi-fi</dt><dd>All 5 interpreted it correctly. 3 identified some minor lingering ambiguity about what the percentage represented. Medium severity.</dd>
+        </dl>
+      </div>
+      <div class="cmp cmp-green">
+        <span class="cmp-chip">Substantially improved</span>
+        <h4>Observation vs interpretation</h4>
+        <dl>
+          <dt>Mid-fi</dt><dd>2 of 5 confused observed behaviour with AI-inferred meaning. Medium to high severity.</dd>
+          <dt>Hi-fi</dt><dd>No longer a priority problem. The explicit separation of observation, evidence and interpretation stayed in the final design.</dd>
+        </dl>
+      </div>
+      <div class="cmp cmp-amber">
+        <span class="cmp-chip">Improved but evolved</span>
+        <h4>Evidence supporting interpretation</h4>
+        <dl>
+          <dt>Mid-fi</dt><dd>Participants asked for a clearer explanation of how findings were generated. High severity.</dd>
+          <dt>Hi-fi</dt><dd>2 of 5 wanted behavioural events tied more clearly to the relevant passage. Medium severity.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <h3>What else testing changed</h3>
+    <ul class="changed">
+      <li><strong>“An awful lot of things” in the navigation.</strong> The menu mixed destinations with stages of the reading workflow. I simplified it and took workflow states out of the permanent navigation.</li>
+      <li><strong>Session controls were expected while reading.</strong> Participants looked for pause, stop and complete alongside the text. A compact observation widget now keeps status and controls in the reading context.</li>
+      <li><strong>“I didn’t really get it.”</strong> A participant took a pause to mean they had not understood. Observable evidence is now separated from the AI’s interpretation, so an observation is never presented as fact about the reader.</li>
+      <li><strong>“I see a little thing that says active, but I don’t know what it means.”</strong> The calm interface had become too subtle. Active, pause and end states are clearer, buttons are stronger and contrast is improved, without losing the calm styling.</li>
+    </ul>
+    <div class="screen-grid cols-2">
+      <div class="screen-wrap">
+        <img src="images/review-usability-log-lowfi.jpg" loading="lazy" decoding="async" alt="Low-fi usability log listing three themes with findings, design implications, changes and headlines">
+        <div class="screen-label">Low-fi usability log — 5 participants</div>
+      </div>
+      <div class="screen-wrap">
+        <img src="images/review-usability-log-midfi.jpg" loading="lazy" decoding="async" alt="Mid-fi usability log listing three themes with findings, design implications, changes and headlines">
+        <div class="screen-label">Mid-fi usability log — 5 participants</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
   <section class="cs">
     <h2>Outcomes</h2>
     <div class="outcome-grid">
-      <div class="outcome-box"><div class="outcome-num">⭐</div><div class="outcome-lbl">Distinction — featured project</div></div>
-      <div class="outcome-box"><div class="outcome-num">15</div><div class="outcome-lbl">Screens designed across onboarding, core app, and reflection tools</div></div>
-      <div class="outcome-box"><div class="outcome-num">4</div><div class="outcome-lbl">Reflective tools: Summary, Timeline, Insight cards, Journal</div></div>
+      <div class="outcome-box"><div class="outcome-num">Distinction</div><div class="outcome-lbl">Awarded for the marked component, with the final dissertation mark still to come</div></div>
+      <div class="outcome-box"><div class="outcome-num">53</div><div class="outcome-lbl">People informed the research: 43 surveyed, 7 interviewed and 3 experts</div></div>
+      <div class="outcome-box"><div class="outcome-num">3</div><div class="outcome-lbl">Rounds of usability testing with five participants each, from paper sketches to the hi-fi design</div></div>
     </div>
-    <p>Re:View is the project I'm most proud of. The concept, the language, the interaction model, and the visual design all came together in a way that feels coherent. The assessors responded to the clarity of the design rationale and the consistency between stated principles and actual decisions.</p>
+    <p>Re:View is the project I'm most proud of. The concept, the language, the interaction model, and the visual design all came together in a way that feels coherent.</p>
   </section>
 
   <section class="cs">
     <h2>Reflection</h2>
     <p>The hardest design problem in Re:View wasn't technical — it was trust. Building a product that observes people's behaviour and reflects it back to them sits in genuinely uncomfortable territory. Every decision about language, transparency, permission and framing was made with that discomfort in mind.</p>
     <p>If I were to continue the project, the most important next step would be research with readers who have complicated relationships with their own reading — people with dyslexia, ADHD, or anxiety around academic performance — to understand whether the current framing genuinely neutralises the evaluative feeling, or just moves it.</p>
+    <p>I would also keep refining the confidence score. It improved in every round of testing, and by the final round all five participants interpreted it correctly, though three still identified some minor ambiguity. A tool built on honesty about uncertainty has to get that right.</p>
   </section>
 </div>
 
@@ -475,39 +650,6 @@ nav{-webkit-backdrop-filter:blur(16px);}
   <a href="index.html">← Back to portfolio</a>
 </footer>
 
-<script>
-var current = 0;
-var total = 15;
-var slides = document.querySelectorAll('.carousel-slide');
-var dots = document.querySelectorAll('#rv-dots button');
-var labels = ["Re:View", "Welcome", "How it works", "After reading", "Reflect together", "System learns", "Thanks \u2014 noted", "Dashboard", "Reading session", "Session complete", "Reflection summary", "Behaviour timeline", "Insight cards", "Reflect together", "Reading journey"];
-
-function rvGo(n) {
-  slides[current].classList.remove('active');
-  dots[current].classList.remove('active');
-  current = (n + total) % total;
-  slides[current].classList.add('active');
-  dots[current].classList.add('active');
-  document.getElementById('rv-counter').textContent = (current+1) + ' / ' + total + ' — ' + labels[current];
-}
-function rvNav(dir) { rvGo(current + dir); }
-
-// Swipe between slides on touch screens
-(function(){
-  var wrap = document.querySelector('.carousel-wrap'), x0 = null, y0 = null;
-  wrap.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, {passive:true});
-  wrap.addEventListener('touchend', function(e){
-    if (x0 === null) return;
-    var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
-    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) rvNav(dx < 0 ? 1 : -1);
-    x0 = null;
-  });
-})();
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'ArrowLeft') rvNav(-1);
-  if (e.key === 'ArrowRight') rvNav(1);
-});
-</script>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Enlarged screen">
   <button class="lb-close" aria-label="Close">&#10005;</button>
@@ -542,7 +684,7 @@ document.addEventListener('keydown', function(e) {
     if (opener) opener.focus();
   }
 
-  document.querySelectorAll('.screen-wrap img, .phone-wrap img, .phone-shell img, .hero-img-wrap img').forEach(function(img){
+  document.querySelectorAll('.screen-wrap img, .phone-wrap img, .phone-shell img, .hero-img-wrap img, .artefact > img').forEach(function(img){
     img.classList.add('zoomable');
     img.tabIndex = 0;
     img.setAttribute('role', 'button');

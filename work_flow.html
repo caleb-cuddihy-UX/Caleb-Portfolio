@@ -11,10 +11,10 @@
 <meta property="og:title" content="Flow — UX Case Study · Caleb Cuddihy">
 <meta property="og:description" content="A calm, neurodiverse-first task and time management tool built on user interviews and co-design. Solo UX case study, awarded Distinction.">
 <meta property="og:url" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/work_flow.html">
-<meta property="og:image" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/og-image.png">
+<meta property="og:image" content="https://caleb-cuddihy-ux.github.io/Caleb-Portfolio/images/og-flow.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
-<meta property="og:image:alt" content="Caleb Cuddihy, UX Designer — Design rooted in real human experience">
+<meta property="og:image:alt" content="Flow case study by Caleb Cuddihy — calm, neurodiverse-first task management">
 <meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -42,7 +42,7 @@ h1{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;letter-spacing:-0.035em;li
 .hero-sub{font-size:1.05rem;color:var(--mid);max-width:60ch;line-height:1.72;margin-bottom:2rem;}
 .meta-row{display:flex;flex-wrap:wrap;gap:0.8rem;margin-bottom:3rem;}
 .meta-item{background:var(--card);border-radius:10px;padding:0.7rem 1.2rem;}
-.meta-label{font-size:0.68rem;font-weight:600;color:var(--light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.15rem;}
+.meta-label{font-size:0.68rem;font-weight:600;color:var(--mid);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.15rem;}
 .meta-val{font-size:0.88rem;font-weight:600;color:var(--ink);}
 
 /* Hero image — full width desktop screenshot */
@@ -75,7 +75,7 @@ li{font-size:1rem;color:var(--mid);line-height:1.75;margin-bottom:0.3rem;}
 .screen-wrap img{width:100%;display:block;}
 .screen-label{
   padding:0.7rem 1rem;
-  font-size:0.75rem;font-weight:600;color:var(--light);
+  font-size:0.75rem;font-weight:600;color:var(--mid);
   background:var(--card);border-top:1px solid var(--border);
 }
 
@@ -98,7 +98,7 @@ li{font-size:1rem;color:var(--mid);line-height:1.75;margin-bottom:0.3rem;}
 .outcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0;}
 .outcome-box{background:var(--card);border-radius:12px;padding:1.4rem;}
 .outcome-num{font-size:2rem;font-weight:800;color:var(--ink);letter-spacing:-0.03em;}
-.outcome-lbl{font-size:0.78rem;color:var(--light);margin-top:0.2rem;line-height:1.4;}
+.outcome-lbl{font-size:0.78rem;color:var(--mid);margin-top:0.2rem;line-height:1.4;}
 
 footer{border-top:1px solid var(--border);padding:1.8rem 2.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;color:var(--light);}
 footer a{color:var(--mid);text-decoration:none;}
@@ -164,6 +164,53 @@ nav{-webkit-backdrop-filter:blur(16px);}
   .cs-hero .meta-row{justify-content:center;}
   .cs-hero .carousel-wrap{text-align:left;}
 }
+/* Research sections: method tag, stats, insight + artefact pairs */
+.phase-tag{display:inline-block;vertical-align:middle;margin-left:0.6rem;font-size:0.7rem;font-weight:600;letter-spacing:0;padding:0.22rem 0.7rem;border-radius:100px;background:#fdebd8;color:#9a3412;}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0 0.5rem;}
+.insight{display:grid;grid-template-columns:1fr 1.15fr;gap:2.5rem;align-items:center;padding:2.2rem 0;border-top:1px solid var(--border);margin-top:2.2rem;}
+.insight + .insight{margin-top:0;}
+.insight-num{font-size:0.75rem;font-weight:700;color:#c8502a;letter-spacing:0.04em;text-transform:uppercase;}
+.insight h3{margin-top:0.4rem;font-size:1.25rem;letter-spacing:-0.015em;line-height:1.25;}
+.insight-so{font-size:0.95rem;margin-bottom:0;}
+.after-insights{padding-top:2.2rem;border-top:1px solid var(--border);margin-top:0;}
+.artefact{margin:0;}
+.artefact img{width:100%;display:block;border-radius:12px;border:1px solid var(--border);box-shadow:0 0 24px rgba(0,0,0,0.07);}
+.artefact figcaption{font-size:0.75rem;color:var(--mid);margin-top:0.7rem;line-height:1.5;}
+.artefact figcaption strong{color:var(--ink);font-weight:600;}
+.artefact-wide{margin:1.5rem 0 0;}
+.artefact-small{max-width:440px;margin:1.2rem 0 1.5rem;}
+.artefact-wide.workshop{margin:0 0 2.2rem;}
+.artefact.quotes{background:var(--card);border-radius:12px;padding:1.4rem;}
+.quotes blockquote{margin:0 0 1rem;padding-left:1rem;border-left:3px solid #e8924a;}
+.quotes blockquote p{font-size:1.02rem;font-style:italic;color:var(--ink);line-height:1.55;margin:0 0 0.3rem;}
+.quotes cite{font-style:normal;font-size:0.75rem;font-weight:600;color:var(--mid);}
+.hmw-list{list-style:none;margin:0.8rem 0 0.5rem;display:grid;grid-template-columns:1fr 1fr;gap:0.7rem;}
+.hmw-list li{background:#fdebd8;border-radius:10px;padding:0.9rem 1rem;font-size:0.92rem;line-height:1.5;color:#7c2d12;margin:0;}
+.hmw-list li::before{content:'How might we ';font-weight:700;}
+.matrix-wrap{margin:1rem 0 0.5rem;}
+.matrix{width:100%;border-collapse:collapse;}
+.matrix th,.matrix td{text-align:left;vertical-align:top;padding:0.75rem 1rem 0.75rem 0;font-size:0.9rem;line-height:1.5;color:var(--mid);border-top:1px solid var(--border);font-weight:400;}
+.matrix thead th{border-top:0;font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--mid);padding-top:0;}
+.matrix tbody th{color:var(--ink);font-weight:600;white-space:nowrap;}
+.nuf-score{font-weight:700;color:var(--ink) !important;white-space:nowrap;}
+a.src{color:inherit;text-decoration:underline;text-underline-offset:2px;}
+.changed{margin:0.4rem 0 0 1.2rem;} .changed li{margin-bottom:0.6rem;} .changed strong{color:var(--ink);font-weight:600;}
+@media(max-width:820px){
+  .stat-grid{grid-template-columns:1fr 1fr;}
+  .insight{grid-template-columns:1fr;gap:1.4rem;padding:1.8rem 0;margin-top:1.8rem;}
+  .hmw-list{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  .stat-grid{gap:0.6rem;}
+  .stat-grid .outcome-box{display:block;padding:1rem;}
+  .matrix.nuf thead{display:none;}
+  .matrix.nuf,.matrix.nuf tbody,.matrix.nuf tr{display:block;}
+  .matrix.nuf tr{padding:0.9rem 0;border-top:1px solid var(--border);}
+  .matrix.nuf th,.matrix.nuf td{display:inline;border:0;padding:0;}
+  .matrix.nuf td:last-child{display:block;margin-top:0.3rem;}
+  .matrix.nuf tbody th::after,.matrix.nuf td:nth-child(2)::after{content:' · ';font-weight:400;color:var(--mid);}
+  .matrix tbody th{white-space:normal;}
+}
 </style>
 </head>
 <body>
@@ -186,7 +233,7 @@ nav{-webkit-backdrop-filter:blur(16px);}
       <div class="meta-item"><div class="meta-label">Type</div><div class="meta-val">Solo Project</div></div>
       <div class="meta-item"><div class="meta-label">Platform</div><div class="meta-val">Desktop</div></div>
       <div class="meta-item"><div class="meta-label">Focus</div><div class="meta-val">Inclusive · ND-first design</div></div>
-      <div class="meta-item"><div class="meta-label">Tools</div><div class="meta-val">Figma · Claude Code · Lovable</div></div>
+      <div class="meta-item"><div class="meta-label">Tools</div><div class="meta-val">Figma · Figma Make</div></div>
       <div class="meta-item"><div class="meta-label">Outcome</div><div class="meta-val">⭐ Distinction</div></div>
     </div>
     <div class="hero-img-wrap">
@@ -198,11 +245,150 @@ nav{-webkit-backdrop-filter:blur(16px);}
   <section class="cs">
     <h2>The problem</h2>
     <p>Task management tools are built for neurotypical users — and it shows. For people with ADHD and other neurodiverse profiles, the typical approach of long flat lists, unclear priority, cognitive overload in UI, and no contextual awareness creates more anxiety than it resolves. The tools designed to help become another source of friction.</p>
-    <p>This isn't a niche problem. An estimated <strong>1 in 7 people are neurodivergent</strong>, yet many established productivity tools are shaped by legacy models of organisation, attention and task management that do not always reflect the diverse ways people think and work.</p>
+    <p>This isn't a niche problem. Research estimates that <strong>about 15% to 20% of UK adults are neurodivergent</strong> (<a class="src" href="https://www.acas.org.uk/research-and-commentary/neurodiversity-at-work-research-practice-and-policy/report" target="_blank" rel="noopener">McDowall et al., Acas, 2025</a>), yet many established productivity tools are shaped by legacy models of organisation, attention and task management that do not always reflect the diverse ways people think and work.</p>
     <p>Flow takes a more inclusive approach. Its design principle is simple: designing around the needs of neurodivergent users doesn't have to compromise the experience for neurotypical users. Instead, features that support flexibility, clarity and reduced cognitive load can create a better experience for everyone.</p>
     <div class="callout">
       <p><strong>The design challenge:</strong> How do we build a task and project management tool that reduces cognitive load, surfaces what matters most, and adapts to how neurodiverse users actually think — without creating a "special needs" product that feels othering?</p>
     </div>
+  </section>
+
+  <!-- UNDERSTANDING THE USERS -->
+  <section class="cs">
+    <h2>Understanding the users <span class="phase-tag">Empathise</span></h2>
+    <p>Flow followed the Stanford d.school Design Thinking process. I ran eight semi-structured interviews, supported by a survey of 17 people, a literature review and a competitor analysis. Recruitment language focused on lived experience of organisational challenges rather than asking people to disclose a diagnosis, which kept the study inclusive and meant the group included people with and without ADHD. In the survey, 8 of the 17 respondents either identified with ADHD or reported similar challenges without a diagnosis, and 7 said they struggle to manage their time or tasks often or very often.</p>
+    <div class="stat-grid">
+      <div class="outcome-box"><div class="outcome-num">8</div><div class="outcome-lbl">Semi-structured interviews</div></div>
+      <div class="outcome-box"><div class="outcome-num">6 of 8</div><div class="outcome-lbl">Interviewees asked for a low-friction experience</div></div>
+      <div class="outcome-box"><div class="outcome-num">4</div><div class="outcome-lbl">Participants in a co-design workshop</div></div>
+      <div class="outcome-box"><div class="outcome-num">17</div><div class="outcome-lbl">Survey respondents</div></div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 01</span>
+        <h3>Task management is fragmented across tools</h3>
+        <p>Every participant relied on a patchwork of notes apps, inboxes, calendars, paper lists and spreadsheets. No one had found a tool that unified them. In the survey, to-do lists and digital calendars were the most used tools, each by 14 of 17 respondents, yet they sit in separate places, and the gap between short-term task lists and longer-term calendars was a recurring pain point.</p>
+        <p class="insight-so"><strong>Design response:</strong> tasks live in one place and surface across the dashboard, daily list, Kanban board and calendar.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/flow-interview-highlights.jpg" loading="lazy" decoding="async" alt="Interview highlights board grouping findings and quotes from eight interviews into six themes">
+        <figcaption><strong>Interview highlights</strong> · eight interviews, six themes</figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 02</span>
+        <h3>High-maintenance tools get abandoned</h3>
+        <p>Participants consistently abandoned tools that needed ongoing effort to maintain. Two of them independently used the word “blocker” for a tool that demands attention before it delivers value.</p>
+        <p class="insight-so"><strong>Design response:</strong> calendar integration so nothing is entered twice, and onboarding that introduces one concept at a time.</p>
+      </div>
+      <figure class="artefact quotes">
+        <blockquote><p>“If it becomes a task in itself, that in itself just feels like an additional burden.”</p><cite>Participant 7</cite></blockquote>
+        <blockquote><p>“It becomes more of a blocker than the use.”</p><cite>Participant 3</cite></blockquote>
+        <figcaption><strong>Interview quotes</strong></figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 03</span>
+        <h3>People need to see the whole picture</h3>
+        <p>Several participants needed to “see everything at once” before they could prioritise or start. Without a bird’s-eye view they felt anxious or disoriented, and anything out of sight was out of mind.</p>
+        <p class="insight-so"><strong>Design response:</strong> a dashboard and Kanban board for the wider view, alongside a simple daily list for the immediate one.</p>
+      </div>
+      <figure class="artefact quotes">
+        <blockquote><p>“If I cannot see the whole thing in one go, I’m not in control.”</p><cite>Participant 5</cite></blockquote>
+        <blockquote><p>“If it’s a visible thing, I feel I want to tackle it first.”</p><cite>Participant 7</cite></blockquote>
+        <figcaption><strong>Interview quotes</strong></figcaption>
+      </figure>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 04</span>
+        <h3>Starting depends on clarity, and time is hard to judge</h3>
+        <p>Getting started was much easier with a clear brief and a visible path. Ambiguity was a common blocker, and estimates for larger or unfamiliar tasks were generally poor: complex tasks consistently took longer than expected.</p>
+        <p class="insight-so"><strong>Design response:</strong> an AI-estimated duration on every task, and AI priority ordering so the first step is never a decision.</p>
+      </div>
+      <figure class="artefact quotes">
+        <blockquote><p>“If the brief is vague, it’s harder to get started.”</p><cite>Participant 7</cite></blockquote>
+        <blockquote><p>“Once I can see it sequentially, I can get going.”</p><cite>Participant 4</cite></blockquote>
+        <figcaption><strong>Interview quotes</strong></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- DEFINING THE FOCUS -->
+  <section class="cs">
+    <h2>Defining the focus <span class="phase-tag">Define · Ideate</span></h2>
+    <p>Affinity mapping and thematic analysis turned the research into a persona, a journey map and a set of questions to design against.</p>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 05</span>
+        <h3>One person to design for</h3>
+        <p>Morgan, “the scattered planner”, is 32, a father of two who works flexible hours from home. He prioritises by urgency or whatever is most visible, skim-reads notifications so only the first few words register, and has tried to-do lists that got lost or abandoned.</p>
+        <p class="insight-so"><strong>What he needs:</strong> to see the whole picture at a glance, know what to expect from a task, and carry less of the mental load of remembering what is next.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/flow-persona.jpg" loading="lazy" decoding="async" alt="Persona of Morgan Smith, the scattered planner, with his pain points, needs and behaviours">
+        <figcaption><strong>Persona</strong> · AI-generated portrait</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="after-insights">The journey, from first download to coming back after a lapse</h3>
+    <p>The journey map follows nine stages. The emotional low is task prioritisation, where Morgan feels overwhelmed. The stage that mattered most to the design is re-engagement after distraction, where shame and avoidance usually end the relationship with a tool.</p>
+    <figure class="artefact artefact-wide">
+      <img src="images/flow-journey-map.jpg" loading="lazy" decoding="async" alt="User journey map with nine stages from discover and setup to reflection and continuity, showing the user goal, actions, thoughts, emotional state, pain points and design opportunities for each">
+      <figcaption><strong>User journey map</strong> · nine stages, with a design opportunity for each</figcaption>
+    </figure>
+
+    <h3>How might we…</h3>
+    <ul class="hmw-list">
+        <li>reduce overwhelm when viewing tasks?</li>
+        <li>help users to break down projects into more manageable tasks?</li>
+        <li>reduce barriers to entry (shame, frustration, embarrassment) and support users trying to re-engage with their task load after a break?</li>
+        <li>help users to start tasks more easily?</li>
+        <li>make the tools engaging and rewarding to use, to sustain long-term use?</li>
+        <li>use AI to help with prioritisation and motivation?</li>
+    </ul>
+
+    <h3>Accessibility design matrix</h3>
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead><tr><th scope="col">Identified challenge</th><th scope="col">Design response</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Cognitive overload</th><td>Reduced visual density and progressive onboarding</td></tr>
+          <tr><th scope="row">Task ambiguity</th><td>Clear categorisation and workflow grouping</td></tr>
+          <tr><th scope="row">Time blindness</th><td>Visible deadlines and temporal awareness tools</td></tr>
+          <tr><th scope="row">Notification fatigue</th><td>Adjustable notification preferences</td></tr>
+          <tr><th scope="row">Executive dysfunction</th><td>Structured workflows and reduced friction</td></tr>
+          <tr><th scope="row">Emotional overwhelm</th><td>Supportive microcopy and non-punitive language</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight">
+      <div class="insight-text">
+        <span class="insight-num">Insight 06</span>
+        <h3>Designing with users, not only for them</h3>
+        <p>Four participants joined a co-design workshop. They responded to written problem scenarios and the How Might We questions, sketched ideas in a Crazy 8s exercise, then used dot voting to pick the ideas that were best received.</p>
+        <p class="insight-so"><strong>Design response:</strong> the ideas that won votes were the ones taken forward for development in the designs that followed.</p>
+      </div>
+      <figure class="artefact">
+        <img src="images/flow-crazy8s-sketch.jpg" loading="lazy" decoding="async" alt="A participant’s Crazy 8s sketches exploring ways to gamify tasks, with coloured voting dots">
+        <figcaption><strong>Crazy 8s sketch</strong> · one participant’s eight ideas for “gamify the task”, with voting dots</figcaption>
+      </figure>
+    </div>
+
+    <figure class="artefact artefact-wide workshop">
+      <img src="images/flow-codesign-workshop.jpg" loading="lazy" decoding="async" alt="Co-creation workshop board with six How Might We panels covered in sticky notes, voting dots and stars">
+      <figcaption><strong>Co-creation workshop board</strong> · ideas and dot votes against each How Might We question</figcaption>
+    </figure>
+
+    <h3 class="after-insights">A change of platform</h3>
+    <p>Flow began as a mobile-first idea. As the feature set grew to include project workflows, a Kanban board and calendar integration, it became clear that squeezing them into a phone screen would increase density and cognitive load, the opposite of the aim. I moved to a desktop workspace, where there is room for spacing, grouping and seeing short-term and long-term work together.</p>
   </section>
 
   <!-- APPROACH -->
@@ -223,7 +409,7 @@ nav{-webkit-backdrop-filter:blur(16px);}
 
   <!-- KEY SCREENS -->
   <section class="cs">
-    <h2>Key screens</h2>
+    <h2>Designing the solution <span class="phase-tag">Prototype</span></h2>
 
     <h3>Dashboard</h3>
     <p>The dashboard gives a single, calm overview of the day — tasks today, Kanban status, a weekly calendar strip, and an AI-estimated focus time. Nothing is hidden and nothing is buried. The AI priority badge on each task removes the cognitive overhead of deciding what matters.</p>
@@ -284,44 +470,77 @@ nav{-webkit-backdrop-filter:blur(16px);}
   <!-- AI & TOOLS -->
   <section class="cs">
     <h2>AI and tooling in the workflow</h2>
-    <p>Flow was the first project where I worked with AI tools as active collaborators in the design and build process, not just as references. This shaped both the product and the process.</p>
+    <p>I used AI tools sparingly on Flow. Every component was constructed manually in Figma, and the design decisions were my own.</p>
 
     <div class="ai-box">
       <div class="ai-icon">⚡</div>
       <div>
-        <h4>Claude Code as development partner</h4>
-        <p>I used Claude Code to prototype and build interactive components alongside the Figma design work — testing ideas in the browser rather than only in static frames. This changed how I approached design decisions: I could validate interaction behaviour quickly rather than assuming how something would feel. It also gave me a much clearer picture of what's technically feasible, which made my design rationale more grounded.</p>
+        <h4>Where AI helped: iterating quickly after testing</h4>
+        <p>Once usability testing had identified the issues, I used Figma Make to iterate rapidly on the changes at the mid- and hi-fi stages. It shortened the distance between a fix and something I could look at and judge. I then rebuilt the components and wired them into the final design by hand.</p>
       </div>
     </div>
 
-    <div class="ai-box">
-      <div class="ai-icon">🛠</div>
-      <div>
-        <h4>Lovable for rapid prototyping</h4>
-        <p>Lovable was used for rapid UI iteration — spinning up interface states quickly to test layout decisions before committing them to Figma. The combination of Figma for systematic design and Lovable for exploratory prototyping gave me a faster feedback loop than either tool alone.</p>
-      </div>
-    </div>
-
-    <p style="margin-top:1.5rem;">Importantly, using AI tools didn't replace design thinking — it compressed the distance between an idea and a testable version of it. Every AI-assisted component was interrogated against the ND-first design principles before it stayed in the product.</p>
+    <p style="margin-top:1.5rem;">Using AI this way didn't replace design thinking. Every idea it helped me visualise was interrogated against the ND-first design principles before it stayed in the product.</p>
   </section>
 
-  <!-- OUTCOMES -->
+  <!-- TESTING AND OUTCOMES -->
   <section class="cs">
-    <h2>Outcomes</h2>
+    <h2>Testing and outcomes <span class="phase-tag">Test</span></h2>
     <div class="outcome-grid">
-      <div class="outcome-box"><div class="outcome-num">⭐</div><div class="outcome-lbl">Distinction grade</div></div>
-      <div class="outcome-box"><div class="outcome-num">5</div><div class="outcome-lbl">Integrated views: Dashboard, Daily tasks, Kanban, Calendar, Settings</div></div>
-      <div class="outcome-box"><div class="outcome-num">ND‑first</div><div class="outcome-lbl">Designed for neurodiverse users, universally better for all</div></div>
+      <div class="outcome-box"><div class="outcome-num">Distinction</div><div class="outcome-lbl">Awarded for the project</div></div>
+      <div class="outcome-box"><div class="outcome-num">5.0/5</div><div class="outcome-lbl">Perceived usefulness, for both onboarding and task management</div></div>
+      <div class="outcome-box"><div class="outcome-num">4.8/5</div><div class="outcome-lbl">Rated a calm and focused experience</div></div>
     </div>
-    <p>The project demonstrated that inclusive design principles and a polished, professional product are not in tension — they reinforce each other. The assessors highlighted the clarity of the design rationale and the coherence between stated principles and actual design decisions.</p>
+    <p>I tested low-fidelity and mid-fidelity prototypes, with five participants in each round. Because the research linked disorganisation with stress, shame and overwhelm, the mid-fi round measured how the product felt as well as whether it worked.</p>
+
+    <h3>How it felt: valence testing</h3>
+    <div class="stat-grid">
+      <div class="outcome-box"><div class="outcome-num">4.3/5</div><div class="outcome-lbl">Emotional comfort</div></div>
+      <div class="outcome-box"><div class="outcome-num">4.7/5</div><div class="outcome-lbl">Mental manageability</div></div>
+      <div class="outcome-box"><div class="outcome-num">5.0/5</div><div class="outcome-lbl">Feeling in control</div></div>
+      <div class="outcome-box"><div class="outcome-num">4.8/5</div><div class="outcome-lbl">Calm and focused experience</div></div>
+    </div>
+    <p>Participants described the experience as “clear”, “calm” and “less overwhelming” than traditional productivity tools.</p>
+
+    <h3>Novel, useful, feasible?</h3>
+    <div class="matrix-wrap">
+      <table class="matrix nuf">
+        <thead><tr><th scope="col">Category</th><th scope="col">Area</th><th scope="col">Average</th><th scope="col">Interpretation</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Novelty</th><td>Onboarding experience</td><td class="nuf-score">3.0 / 5</td><td>Seen as familiar and easy to understand rather than highly innovative.</td></tr>
+          <tr><th scope="row">Novelty</th><td>Task management workflow</td><td class="nuf-score">4.0 / 5</td><td>Kanban integration, structured organisation and workflow visibility felt more innovative than existing tools.</td></tr>
+          <tr><th scope="row">Usefulness</th><td>Onboarding experience</td><td class="nuf-score">5.0 / 5</td><td>Onboarding clearly communicated the app’s purpose and functionality.</td></tr>
+          <tr><th scope="row">Usefulness</th><td>Task management workflow</td><td class="nuf-score">5.0 / 5</td><td>Daily tasks and Kanban were seen as highly useful for organisation, prioritisation and workload management.</td></tr>
+          <tr><th scope="row">Feasibility</th><td>Onboarding experience</td><td class="nuf-score">5.0 / 5</td><td>Realistic, manageable and easy to complete in everyday use.</td></tr>
+          <tr><th scope="row">Feasibility</th><td>Task management workflow</td><td class="nuf-score">4.2 / 5</td><td>Practical for regular use, although some terminology and workflow relationships needed clarifying.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Novelty scored lowest and usefulness highest. Flow’s strength is not a radically new interaction, but bringing familiar ones together in a way that is accessible and emotionally considerate.</p>
+
+    <h3>What changed after testing</h3>
+    <ul class="changed">
+      <li><strong>The Kanban board’s purpose was unclear in low-fi.</strong> It was shown but not explained. Onboarding gained explanatory microcopy and visual examples of how the board supports organisation and progress.</li>
+      <li><strong>Interactive elements were hard to spot.</strong> I added stronger visual affordances, clearer progression cues and more explicit signposting.</li>
+      <li><strong>Notification profiles needed explaining.</strong> Hovering over a profile now describes who it suits and what it will and won’t send.</li>
+      <li><strong>It was unclear how the daily list, calendar and Kanban board relate.</strong> Participants asked whether a task created in one appeared in the others. Mid-fi regrouped related features and tightened the hierarchy and task-creation flow.</li>
+      <li><strong>“Backlog” felt like pressure.</strong> One participant associated the word with urgency and guilt. The column became “Not Started”.</li>
+    </ul>
+    <figure class="artefact artefact-small">
+      <img src="images/flow-not-started-label.jpg" loading="lazy" decoding="async" alt="Kanban board with the first column labelled Not Started">
+      <figcaption><strong>Microcopy change</strong> · “Backlog” renamed “Not Started” after mid-fi feedback</figcaption>
+    </figure>
+
+    <p>The project demonstrated that inclusive design principles and a polished, professional product are not in tension — they reinforce each other.</p>
   </section>
 
   <!-- REFLECTION -->
   <section class="cs">
     <h2>Reflection</h2>
     <p>Flow is the project that most directly connects my professional background to my UX practice. The design decisions aren't hypothetical — they're grounded in a decade of observing what actually goes wrong when ND users interact with software that wasn't built for them.</p>
-    <p>Working with Claude Code and Lovable as part of the process also changed how I think about the designer's role. The boundary between design and implementation is more permeable than traditional workflows suggest, and being comfortable on both sides of it makes for better design decisions — not just faster ones.</p>
-    <p>If I were to continue the project, the most valuable next step would be usability testing with ADHD users specifically — to validate whether the AI priority ordering reduces or increases anxiety, and whether the three-profile notification system lands as intended or still feels like too many choices.</p>
+    <p>Using AI tooling sparingly also clarified where it belongs in my process: it is useful for visualising and iterating quickly, while the decisions and the construction stay with me.</p>
+    <p>Testing so far involved a mixed group, because recruitment focused on lived experience rather than diagnosis. The most valuable next step would be testing with a group of ADHD users specifically — to validate whether the AI priority ordering reduces or increases anxiety, and whether the three-profile notification system lands as intended or still feels like too many choices.</p>
+    <p>The project also taught me something about discipline. Once the design moved to desktop, I spent too long refining visuals at mid-fidelity, when the goal of that stage was to test clarity and function. I now match a prototype’s polish to what the next test needs to answer.</p>
   </section>
 
 </div>
@@ -365,7 +584,7 @@ nav{-webkit-backdrop-filter:blur(16px);}
     if (opener) opener.focus();
   }
 
-  document.querySelectorAll('.screen-wrap img, .phone-wrap img, .phone-shell img, .hero-img-wrap img').forEach(function(img){
+  document.querySelectorAll('.screen-wrap img, .phone-wrap img, .phone-shell img, .hero-img-wrap img, .artefact > img').forEach(function(img){
     img.classList.add('zoomable');
     img.tabIndex = 0;
     img.setAttribute('role', 'button');
